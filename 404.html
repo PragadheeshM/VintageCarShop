@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Vintage Car Restoration Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter">
+
+  <div class="min-h-screen flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 60%, #1a1a2e 100%);">
+    <!-- Floating shapes -->
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+    <div class="hero-shape-ring"></div>
+
+    <div class="text-center relative z-10 px-4 max-w-2xl mx-auto">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 justify-center mb-10">
+        <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
+        <span class="text-white font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span>
+      </a>
+
+      <!-- 404 Number -->
+      <div class="relative mb-6">
+        <span class="text-[10rem] sm:text-[14rem] font-outfit font-900 text-transparent leading-none" style="background: linear-gradient(135deg, #c8a951 0%, rgba(200,169,81,0.2) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">404</span>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <i class="fa-solid fa-car-burst text-accent/20 text-6xl animate-float"></i>
+        </div>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-outfit font-800 text-white mb-4">Looks Like a Wrong Turn</h1>
+      <p class="text-white/50 text-lg mb-8 max-w-md mx-auto">The page you're looking for has been moved, scrapped, or never existed. Let's get you back on the road.</p>
+
+      <!-- Search -->
+      <div class="flex max-w-md mx-auto mb-8">
+        <input type="text" placeholder="Search our site..." class="flex-1 px-5 py-3 rounded-l-xl bg-white/10 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-accent text-sm">
+        <button class="px-5 py-3 bg-accent text-primary rounded-r-xl font-semibold hover:bg-accent-light transition"><i class="fa-solid fa-search"></i></button>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="index.html" class="btn-primary"><i class="fa-solid fa-home"></i> Back to Home</a>
+        <a href="contact.html" class="btn-outline !border-white/30 !text-white hover:!bg-white/10"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

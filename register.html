@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Vintage Car Restoration Shop</title>
+  <meta name="description" content="Create your Vintage Car Restoration Shop account to start tracking your classic car restoration projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter">
+
+  <div class="auth-bg" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1600&h=1000&fit=crop');">
+    <!-- Register Card -->
+    <div class="auth-card scale-in">
+      <!-- Logo & Toggles -->
+      <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
+          <span class="text-white font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span>
+        </a>
+        <div class="flex items-center gap-2">
+          <button id="dark-mode-toggle" class="w-9 h-9 rounded-full flex items-center justify-center text-white/70 hover:bg-white/10 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
+          <button id="rtl-toggle" class="w-9 h-9 rounded-full flex items-center justify-center text-white/70 hover:bg-white/10 hover:text-accent transition"><i class="fa-solid fa-globe"></i></button>
+        </div>
+      </div>
+
+      <div class="text-center mb-8">
+        <h1 class="text-2xl font-outfit font-800 text-white mb-2">Create Account</h1>
+        <p class="text-white/50 text-sm">Join our community of classic car enthusiasts</p>
+      </div>
+      <form id="register-form" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="reg-first">First Name</label>
+            <input type="text" id="reg-first" required placeholder="John">
+          </div>
+          <div>
+            <label for="reg-last">Last Name</label>
+            <input type="text" id="reg-last" required placeholder="Doe">
+          </div>
+        </div>
+        <div>
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" required placeholder="john@example.com">
+        </div>
+        <div>
+          <label for="reg-phone">Phone Number</label>
+          <input type="tel" id="reg-phone" placeholder="+1 (555) 000-0000">
+        </div>
+        <div>
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" required placeholder="••••••••">
+        </div>
+        <div>
+          <label for="reg-confirm">Confirm Password</label>
+          <input type="password" id="reg-confirm" required placeholder="••••••••">
+        </div>
+        <label class="flex items-start gap-2.5 cursor-pointer mt-3 mb-1 w-full" style="display: flex !important;">
+          <div class="flex items-center h-[20px] pt-1 mt-0.5">
+            <input type="checkbox" required class="w-[18px] h-[18px] rounded border-white/30 bg-white/10 text-accent focus:ring-accent cursor-pointer m-0 flex-shrink-0">
+          </div>
+          <div class="text-white/80 text-[14px] leading-snug">
+            I agree to the <a href="#" class="text-accent hover:underline">Terms of Service</a> and <a href="#" class="text-accent hover:underline">Privacy Policy</a>
+          </div>
+        </label>
+        <button type="submit" class="btn-primary w-full justify-center !py-3 text-base"><i class="fa-solid fa-user-plus"></i> Create Account</button>
+      </form>
+
+      <div class="flex items-center gap-4 my-6">
+        <div class="flex-1 h-px bg-white/10"></div>
+        <span class="text-white/30 text-xs">OR</span>
+        <div class="flex-1 h-px bg-white/10"></div>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border border-white/10 text-white/70 hover:border-accent hover:text-accent transition text-sm"><i class="fa-brands fa-google"></i> Google</button>
+        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border border-white/10 text-white/70 hover:border-accent hover:text-accent transition text-sm"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+      </div>
+      <p class="text-center text-white/50 text-sm mt-6">Already have an account? <a href="login.html" class="text-accent font-semibold hover:underline">Sign In</a></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

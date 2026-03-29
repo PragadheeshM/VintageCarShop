@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | Vintage Car Restoration Shop</title>
+  <meta name="description" content="Something exciting is coming. Stay tuned for our latest updates at Vintage Car Restoration Shop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter">
+
+  <div class="min-h-screen flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 50%, #1a1a2e 100%);">
+    <!-- Floating shapes -->
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+    <div class="hero-shape hero-shape-3"></div>
+    <div class="hero-shape-ring"></div>
+    <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23c8a951&quot; fill-opacity=&quot;0.4&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+
+    <div class="text-center relative z-10 px-4 max-w-3xl mx-auto">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 justify-center mb-10">
+        <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
+        <span class="text-white font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span>
+      </a>
+
+      <div class="section-badge mx-auto mb-6" style="display: inline-flex;"><i class="fa-solid fa-rocket"></i> Launching Soon</div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-outfit font-900 text-white leading-tight mb-4">
+        Something <span class="text-accent">Amazing</span> Is Coming
+      </h1>
+      <p class="text-white/50 text-lg mb-12 max-w-xl mx-auto">We're working hard on something exciting. Our new online restoration tracking portal will let you follow your project in real-time.</p>
+
+      <!-- Countdown Timer -->
+      <div id="countdown" class="grid grid-cols-4 gap-4 sm:gap-6 max-w-lg mx-auto mb-12">
+        <div class="glass-card p-4 sm:p-6 text-center" style="animation: countdown-pulse 3s ease-in-out infinite;">
+          <div id="cd-days" class="text-3xl sm:text-5xl font-outfit font-900 text-accent">00</div>
+          <div class="text-white/40 text-xs sm:text-sm font-medium mt-1 uppercase tracking-wider">Days</div>
+        </div>
+        <div class="glass-card p-4 sm:p-6 text-center" style="animation: countdown-pulse 3s ease-in-out infinite 0.5s;">
+          <div id="cd-hours" class="text-3xl sm:text-5xl font-outfit font-900 text-accent">00</div>
+          <div class="text-white/40 text-xs sm:text-sm font-medium mt-1 uppercase tracking-wider">Hours</div>
+        </div>
+        <div class="glass-card p-4 sm:p-6 text-center" style="animation: countdown-pulse 3s ease-in-out infinite 1s;">
+          <div id="cd-minutes" class="text-3xl sm:text-5xl font-outfit font-900 text-accent">00</div>
+          <div class="text-white/40 text-xs sm:text-sm font-medium mt-1 uppercase tracking-wider">Minutes</div>
+        </div>
+        <div class="glass-card p-4 sm:p-6 text-center" style="animation: countdown-pulse 3s ease-in-out infinite 1.5s;">
+          <div id="cd-seconds" class="text-3xl sm:text-5xl font-outfit font-900 text-accent">00</div>
+          <div class="text-white/40 text-xs sm:text-sm font-medium mt-1 uppercase tracking-wider">Seconds</div>
+        </div>
+      </div>
+
+      <!-- Email Signup -->
+      <div class="max-w-md mx-auto mb-10">
+        <p class="text-white/60 text-sm mb-4">Get notified when we launch:</p>
+        <form class="newsletter-form flex">
+          <input type="email" placeholder="Enter your email address" required class="flex-1 px-5 py-3.5 rounded-l-xl bg-white/10 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-accent text-sm">
+          <button type="submit" class="px-6 py-3.5 bg-accent text-primary rounded-r-xl font-outfit font-bold text-sm hover:bg-accent-light transition whitespace-nowrap"><i class="fa-solid fa-bell mr-2"></i>Notify Me</button>
+        </form>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex items-center justify-center gap-4">
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-accent hover:text-primary hover:border-accent transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-accent hover:text-primary hover:border-accent transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-accent hover:text-primary hover:border-accent transition"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-accent hover:text-primary hover:border-accent transition"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+
+      <!-- Back link -->
+      <a href="index.html" class="inline-flex items-center gap-2 text-white/40 text-sm mt-10 hover:text-accent transition"><i class="fa-solid fa-arrow-left"></i> Back to Main Site</a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

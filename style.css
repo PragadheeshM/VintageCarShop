@@ -53,6 +53,24 @@
 [data-theme="dark"] .dashboard-sidebar { background: #0f0f1a !important; }
 [data-theme="dark"] .stat-card { background: #1a1a35 !important; }
 
+/* Dark mode specific visibility fixes for nav/dashboard toggles */
+[data-theme="dark"] #dark-mode-toggle, 
+[data-theme="dark"] #rtl-toggle,
+[data-theme="dark"] #sidebar-toggle,
+[data-theme="dark"] #sidebar-toggle i,
+[data-theme="dark"] .hamburger span {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="dark"] #sidebar-toggle i,
+[data-theme="dark"] #dark-mode-toggle i,
+[data-theme="dark"] #rtl-toggle i {
+  color: #fff !important;
+}
+[data-theme="dark"] .hamburger span {
+  background: #fff !important;
+}
+
 /* ===== RTL ===== */
 [dir="rtl"] { direction: rtl; text-align: right; }
 [dir="rtl"] .rtl-flip { transform: scaleX(-1); }

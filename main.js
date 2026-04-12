@@ -116,18 +116,29 @@ function initDarkMode() {
   const toggle = document.getElementById('dark-mode-toggle');
   if (!toggle) return;
   // Check saved preference
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    updateDarkModeIcon(toggle, savedTheme);
+  let savedTheme = localStorage.getItem('theme');
+  if (!savedTheme) {
+      savedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
+  
+  applyTheme(savedTheme, toggle);
+
   toggle.addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    updateDarkModeIcon(toggle, next);
+    applyTheme(next, toggle);
   });
+}
+
+function applyTheme(theme, toggle) {
+  document.documentElement.setAttribute('data-theme', theme);
+  if (theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+  localStorage.setItem('theme', theme);
+  if (toggle) updateDarkModeIcon(toggle, theme);
 }
 
 function updateDarkModeIcon(toggle, theme) {

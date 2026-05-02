@@ -20,22 +20,23 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
-        <span class="font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span>
+        <span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span>
       </a>
       <div class="hidden xl:flex items-center gap-8 desktop-nav">
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html"><i class="fa-solid fa-home mr-2"></i>Homepage 1</a><a href="index2.html"><i class="fa-solid fa-layer-group mr-2"></i>Homepage 2</a></div></div>
+        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div></div>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="pricing.html" class="nav-link">Pricing</a>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Blog <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="blog.html"><i class="fa-solid fa-newspaper mr-2"></i>Blog Listing</a><a href="blog-details.html"><i class="fa-solid fa-file-lines mr-2"></i>Blog Details</a></div></div>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html"><i class="fa-solid fa-gauge mr-2"></i>User Dashboard</a><a href="admin-dashboard.html"><i class="fa-solid fa-shield mr-2"></i>Admin Dashboard</a></div></div>
+        <a href="blog.html" class="nav-link">Blog</a>
+        
         <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div></div>
       </div>
       <div class="flex items-center gap-3">
-        <button id="dark-mode-toggle" class="w-9 h-9 rounded-full flex items-center justify-center text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
-        <button id="rtl-toggle" class="w-9 h-9 rounded-full flex items-center justify-center text-white/70 hover:text-accent transition"><i class="fa-solid fa-globe"></i></button>
-        <a href="login.html" class="hidden sm:inline-flex btn-outline text-sm !py-2 !px-5">Login</a>
-        <a href="register.html" class="hidden sm:inline-flex btn-primary text-sm !py-2 !px-5">Register</a>
+        <button id="dark-mode-toggle" class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
+        <button id="rtl-toggle" class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
+        <a href="login.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
+        <a href="register.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
         <div id="hamburger" class="hamburger xl:hidden"><span></span><span></span><span></span></div>
       </div>
     </div>
@@ -45,14 +46,12 @@
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="pricing.html">Pricing</a>
-      <a href="#" class="mobile-dropdown-toggle">Blog <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
-      <div class="mobile-submenu"><a href="blog.html">Blog Listing</a><a href="blog-details.html">Blog Details</a></div>
+      <a href="blog.html">Blog</a>
+      
+      <a href="contact.html">Contact</a>
       <a href="#" class="mobile-dropdown-toggle">Dashboard <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
       <div class="mobile-submenu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div>
-      <a href="contact.html">Contact</a>
-      
-      
-    
+
       <div class="px-6 py-4 border-t border-white/10 sm:hidden mobile-auth-links">
         <a href="login.html" class="block py-3 text-white/70 hover:text-accent transition">Login</a>
         <a href="register.html" class="block btn-primary text-center !py-2.5">Register</a>
@@ -68,7 +67,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-32">
       <div class="max-w-2xl">
         <div class="section-badge fade-in"><i class="fa-solid fa-trophy"></i> Award-Winning Craftsmanship</div>
-        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-outfit font-900 text-white leading-tight mb-6 fade-in">
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-outfit font-semibold text-white leading-tight mb-6 fade-in">
           Where <span class="text-accent">Passion</span> Meets Precision
         </h1>
         <p class="text-white/60 text-lg mb-8 fade-in delay-1">Every classic car has a story. We're here to make sure that story continues for generations to come. World-class restoration, one masterpiece at a time.</p>
@@ -94,20 +93,20 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
         <div class="fade-in">
-          <div class="text-3xl sm:text-4xl font-outfit font-900 text-accent mb-1">35+</div>
-          <div class="text-white/50 text-xs uppercase tracking-widest font-bold">Years Experience</div>
+          <div class="text-3xl sm:text-4xl font-outfit font-semibold text-accent mb-1">35+</div>
+          <div class="text-white/50 text-xs uppercase tracking-widest font-semibold">Years Experience</div>
         </div>
         <div class="fade-in delay-1">
-          <div class="text-3xl sm:text-4xl font-outfit font-900 text-accent mb-1">850+</div>
-          <div class="text-white/50 text-xs uppercase tracking-widest font-bold">Cars Restored</div>
+          <div class="text-3xl sm:text-4xl font-outfit font-semibold text-accent mb-1">850+</div>
+          <div class="text-white/50 text-xs uppercase tracking-widest font-semibold">Cars Restored</div>
         </div>
         <div class="fade-in delay-2">
-          <div class="text-3xl sm:text-4xl font-outfit font-900 text-accent mb-1">100%</div>
-          <div class="text-white/50 text-xs uppercase tracking-widest font-bold">Client Satisfaction</div>
+          <div class="text-3xl sm:text-4xl font-outfit font-semibold text-accent mb-1">100%</div>
+          <div class="text-white/50 text-xs uppercase tracking-widest font-semibold">Client Satisfaction</div>
         </div>
         <div class="fade-in delay-3">
-          <div class="text-3xl sm:text-4xl font-outfit font-900 text-accent mb-1">24</div>
-          <div class="text-white/50 text-xs uppercase tracking-widest font-bold">Awards Won</div>
+          <div class="text-3xl sm:text-4xl font-outfit font-semibold text-accent mb-1">24</div>
+          <div class="text-white/50 text-xs uppercase tracking-widest font-semibold">Awards Won</div>
         </div>
       </div>
     </div>
@@ -119,14 +118,14 @@
       <div class="text-center mb-14">
         <div class="section-badge fade-in"><i class="fa-solid fa-gem"></i> Featured Work</div>
         <h2 class="section-title fade-in">Recent <span class="text-accent">Restorations</span></h2>
-        <p class="section-subtitle fade-in delay-1">A gallery of our finest work showcasing the passion and precision behind every restoration.</p>
+        <p class="section-subtitle fade-in delay-1 font-medium">A gallery of our finest work showcasing the passion and precision behind every restoration.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="group rounded-2xl overflow-hidden shadow-card hover-float fade-in">
           <div class="relative overflow-hidden h-64">
             <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&h=350&fit=crop" alt="Porsche 911" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div><h3 class="text-white font-outfit font-bold text-lg">1973 Porsche 911 RS</h3><p class="text-accent text-sm">Full Concours Restoration</p></div>
+              <div><h3 class="text-white font-outfit font-semibold text-lg">1973 Porsche 911 RS</h3><p class="text-accent text-sm">Full Concours Restoration</p></div>
             </div>
           </div>
         </div>
@@ -134,7 +133,7 @@
           <div class="relative overflow-hidden h-64">
             <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=500&h=350&fit=crop" alt="Classic car" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div><h3 class="text-white font-outfit font-bold text-lg">1967 Shelby GT500</h3><p class="text-accent text-sm">Engine & Body Rebuild</p></div>
+              <div><h3 class="text-white font-outfit font-semibold text-lg">1967 Shelby GT500</h3><p class="text-accent text-sm">Engine & Body Rebuild</p></div>
             </div>
           </div>
         </div>
@@ -142,7 +141,7 @@
           <div class="relative overflow-hidden h-64">
             <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&h=350&fit=crop" alt="Vintage car" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div><h3 class="text-white font-outfit font-bold text-lg">1961 Jaguar E-Type</h3><p class="text-accent text-sm">Complete Frame-Off</p></div>
+              <div><h3 class="text-white font-outfit font-semibold text-lg">1961 Jaguar E-Type</h3><p class="text-accent text-sm">Complete Frame-Off</p></div>
             </div>
           </div>
         </div>
@@ -160,26 +159,26 @@
       <div class="grid md:grid-cols-4 gap-8">
         <div class="text-center fade-in">
           <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl mx-auto mb-4"><i class="fa-solid fa-comments"></i></div>
-          <div class="text-accent font-outfit font-bold text-sm mb-2">STEP 01</div>
-          <h3 class="font-outfit font-bold text-lg mb-2">Consultation</h3>
+          <div class="text-accent font-outfit font-semibold text-sm mb-2">STEP 01</div>
+          <h3 class="font-outfit font-semibold text-lg mb-2">Consultation</h3>
           <p class="text-txtlight text-sm">We discuss your vision, assess the vehicle, and plan the restoration path forward.</p>
         </div>
         <div class="text-center fade-in delay-1">
           <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl mx-auto mb-4"><i class="fa-solid fa-clipboard-check"></i></div>
-          <div class="text-accent font-outfit font-bold text-sm mb-2">STEP 02</div>
-          <h3 class="font-outfit font-bold text-lg mb-2">Assessment</h3>
+          <div class="text-accent font-outfit font-semibold text-sm mb-2">STEP 02</div>
+          <h3 class="font-outfit font-semibold text-lg mb-2">Assessment</h3>
           <p class="text-txtlight text-sm">Complete teardown and documentation of every component for precise restoration.</p>
         </div>
         <div class="text-center fade-in delay-2">
           <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl mx-auto mb-4"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-          <div class="text-accent font-outfit font-bold text-sm mb-2">STEP 03</div>
-          <h3 class="font-outfit font-bold text-lg mb-2">Restoration</h3>
+          <div class="text-accent font-outfit font-semibold text-sm mb-2">STEP 03</div>
+          <h3 class="font-outfit font-semibold text-lg mb-2">Restoration</h3>
           <p class="text-txtlight text-sm">Skilled craftsmen meticulously restore each part with period-correct materials.</p>
         </div>
         <div class="text-center fade-in delay-3">
           <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-2xl mx-auto mb-4"><i class="fa-solid fa-flag-checkered"></i></div>
-          <div class="text-accent font-outfit font-bold text-sm mb-2">STEP 04</div>
-          <h3 class="font-outfit font-bold text-lg mb-2">Delivery</h3>
+          <div class="text-accent font-outfit font-semibold text-sm mb-2">STEP 04</div>
+          <h3 class="font-outfit font-semibold text-lg mb-2">Delivery</h3>
           <p class="text-txtlight text-sm">Final quality inspection, test drive, and a grand reveal of your reborn classic.</p>
         </div>
       </div>
@@ -202,7 +201,7 @@
               <a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-twitter"></i></a>
             </div>
           </div>
-          <h3 class="font-outfit font-bold">Richard Hayes</h3>
+          <h3 class="font-outfit font-semibold">Richard Hayes</h3>
           <p class="text-accent text-sm">Founder & Lead Restorer</p>
         </div>
         <div class="text-center fade-in delay-1 hover-float">
@@ -212,7 +211,7 @@
               <a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
-          <h3 class="font-outfit font-bold">Maria Santos</h3>
+          <h3 class="font-outfit font-semibold">Maria Santos</h3>
           <p class="text-accent text-sm">Paint Specialist</p>
         </div>
         <div class="text-center fade-in delay-2 hover-float">
@@ -222,7 +221,7 @@
               <a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
-          <h3 class="font-outfit font-bold">Thomas Wright</h3>
+          <h3 class="font-outfit font-semibold">Thomas Wright</h3>
           <p class="text-accent text-sm">Engine Specialist</p>
         </div>
         <div class="text-center fade-in delay-3 hover-float">
@@ -232,7 +231,7 @@
               <a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
-          <h3 class="font-outfit font-bold">Elena Ross</h3>
+          <h3 class="font-outfit font-semibold">Elena Ross</h3>
           <p class="text-accent text-sm">Interior Designer</p>
         </div>
       </div>
@@ -252,7 +251,7 @@
           <p class="text-txtlight text-sm italic mb-6">"Finding a shop that understands the soul of a vintage machine is rare. These guys aren't just mechanics; they're artists."</p>
           <div class="flex items-center gap-3">
             <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div><div class="font-outfit font-bold text-sm">Marcus Thorne</div><div class="text-txtlight text-xs">Ferrari 250 GTO Collector</div></div>
+            <div><div class="font-outfit font-semibold text-sm">Marcus Thorne</div><div class="text-txtlight text-xs">Ferrari 250 GTO Collector</div></div>
           </div>
         </div>
         <div class="testimonial-card !bg-secondary hover-float fade-in delay-1">
@@ -260,7 +259,7 @@
           <p class="text-txtlight text-sm italic mb-6">"The communication was crystal clear throughout the 14-month restoration. I never felt in the dark about my project."</p>
           <div class="flex items-center gap-3">
             <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div><div class="font-outfit font-bold text-sm">Diana Prince</div><div class="text-txtlight text-xs">Classic Mini Owner</div></div>
+            <div><div class="font-outfit font-semibold text-sm">Diana Prince</div><div class="text-txtlight text-xs">Classic Mini Owner</div></div>
           </div>
         </div>
         <div class="testimonial-card !bg-secondary hover-float fade-in delay-2">
@@ -268,7 +267,7 @@
           <p class="text-txtlight text-sm italic mb-6">"They handled every hurdle of my barn-find rebuild with professionalism. The end result is a museum-quality masterpiece."</p>
           <div class="flex items-center gap-3">
             <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?w=50&h=50&fit=crop" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div><div class="font-outfit font-bold text-sm">Kevin Slater</div><div class="text-txtlight text-xs">Muscle Car Enthusiast</div></div>
+            <div><div class="font-outfit font-semibold text-sm">Kevin Slater</div><div class="text-txtlight text-xs">Muscle Car Enthusiast</div></div>
           </div>
         </div>
       </div>
@@ -283,33 +282,30 @@
         <h2 class="section-title fade-in">From Our <span class="text-accent">Blog</span></h2>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="blog-card hover-float fade-in">
+        <a href="blog-details.html" class="blog-card block hover-float fade-in">
           <div class="overflow-hidden h-48"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=250&fit=crop" alt="Blog" class="w-full h-full object-cover"></div>
           <div class="p-6">
             <div class="flex items-center gap-3 mb-3"><span class="blog-tag">Restoration</span><span class="text-txtlight text-xs">Mar 15, 2026</span></div>
-            <h3 class="font-outfit font-bold text-lg mb-2">5 Signs Your Classic Car Needs Professional Restoration</h3>
+            <h3 class="font-outfit font-semibold text-lg mb-2">5 Signs Your Classic Car Needs Professional Restoration</h3>
             <p class="text-txtlight text-sm mb-4">Learn the telltale signs that indicate it's time to bring your vintage ride to the experts.</p>
-            <a href="blog-details.html" class="text-accent font-semibold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
-          </div>
-        </div>
-        <div class="blog-card hover-float fade-in delay-1">
+            <span class="text-accent font-semibold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></span>
+          </div></a>
+        <a href="blog-details.html" class="blog-card block hover-float fade-in delay-1">
           <div class="overflow-hidden h-48"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=250&fit=crop" alt="Blog" class="w-full h-full object-cover"></div>
           <div class="p-6">
             <div class="flex items-center gap-3 mb-3"><span class="blog-tag">Tips</span><span class="text-txtlight text-xs">Mar 8, 2026</span></div>
-            <h3 class="font-outfit font-bold text-lg mb-2">How to Maintain Your Restored Classic Car</h3>
+            <h3 class="font-outfit font-semibold text-lg mb-2">How to Maintain Your Restored Classic Car</h3>
             <p class="text-txtlight text-sm mb-4">Essential maintenance tips to keep your freshly restored classic in showroom condition.</p>
-            <a href="blog-details.html" class="text-accent font-semibold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
-          </div>
-        </div>
-        <div class="blog-card hover-float fade-in delay-2">
+            <span class="text-accent font-semibold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></span>
+          </div></a>
+        <a href="blog-details.html" class="blog-card block hover-float fade-in delay-2">
           <div class="overflow-hidden h-48"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=250&fit=crop" alt="Blog" class="w-full h-full object-cover"></div>
           <div class="p-6">
             <div class="flex items-center gap-3 mb-3"><span class="blog-tag">Guide</span><span class="text-txtlight text-xs">Feb 28, 2026</span></div>
-            <h3 class="font-outfit font-bold text-lg mb-2">The Ultimate Guide to Buying a Vintage Car</h3>
+            <h3 class="font-outfit font-semibold text-lg mb-2">The Ultimate Guide to Buying a Vintage Car</h3>
             <p class="text-txtlight text-sm mb-4">What to look for, what to avoid, and how to get the best deal on your dream classic.</p>
-            <a href="blog-details.html" class="text-accent font-semibold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
-          </div>
-        </div>
+            <span class="text-accent font-semibold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></span>
+          </div></a>
       </div>
     </div>
   </section>
@@ -317,7 +313,7 @@
   <!-- ===== CTA ===== -->
   <section class="py-20 relative overflow-hidden" style="background: linear-gradient(135deg, #1a1a2e 0%, #c8a951 100%);">
     <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-      <h2 class="text-3xl sm:text-4xl font-outfit font-800 text-white mb-4 fade-in">Start Your Restoration Journey</h2>
+      <h2 class="text-3xl sm:text-4xl font-outfit font-semibold text-white mb-4 fade-in">Start Your Restoration Journey</h2>
       <p class="text-white/70 text-lg mb-8 fade-in delay-1">Whether it's a barn find or a family heirloom, we'll bring it back to its full glory.</p>
       <a href="contact.html" class="btn-primary text-lg !py-3.5 !px-10 fade-in delay-2"><i class="fa-solid fa-phone"></i> Contact Us Today</a>
     </div>
@@ -331,7 +327,7 @@
         <div>
           <a href="index.html" class="flex items-center gap-3 mb-4">
             <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
-            <span class="font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span>
+            <span class="font-outfit font-semibold text-xl text-white">Vintage<span class="text-accent">Cars</span></span>
           </a>
           <p class="text-white/50 text-sm leading-relaxed mb-4">Bringing timeless classics back to life since 1987. Our passion is preserving automotive history for future generations.</p>
           <div class="flex gap-3">
@@ -343,7 +339,7 @@
         </div>
         <!-- Quick Links -->
         <div>
-          <h4 class="text-white font-outfit font-bold text-lg mb-4">Quick Links</h4>
+          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li><a href="about.html" class="text-white/50 hover:text-accent transition text-sm">About Us</a></li>
             <li><a href="services.html" class="text-white/50 hover:text-accent transition text-sm">Services</a></li>
@@ -354,7 +350,7 @@
         </div>
         <!-- Services -->
         <div>
-          <h4 class="text-white font-outfit font-bold text-lg mb-4">Services</h4>
+          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Services</h4>
           <ul class="space-y-2">
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full Restoration</a></li>
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom Paint</a></li>
@@ -365,7 +361,7 @@
         </div>
         <!-- Newsletter -->
         <div>
-          <h4 class="text-white font-outfit font-bold text-lg mb-4">Newsletter</h4>
+          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Newsletter</h4>
           <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.</p>
           <form class="newsletter-form flex w-full max-w-full">
             <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">
@@ -374,7 +370,7 @@
         </div>
       </div>
       <div class="border-t border-white/10 pt-6 text-center">
-        <p class="text-white/40 text-sm">&copy; 2026 VintageCars. All rights reserved.</p>
+        <p class="text-white/40 text-sm">&copy; 2026 Vintage<span class="text-accent">Cars</span>. All rights reserved.</p>
       </div>
     </div>
   </footer>

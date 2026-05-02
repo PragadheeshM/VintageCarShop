@@ -156,16 +156,28 @@ function initRTLToggle() {
   const toggle = document.getElementById('rtl-toggle');
   if (!toggle) return;
   const savedDir = localStorage.getItem('dir');
-  if (savedDir) {
-    document.documentElement.setAttribute('dir', savedDir);
-  }
+  const current = savedDir || 'ltr';
+  document.documentElement.setAttribute('dir', current);
+  updateRTLToggleText(toggle, current);
+
   toggle.addEventListener('click', () => {
     const current = document.documentElement.getAttribute('dir') || 'ltr';
     const next = current === 'rtl' ? 'ltr' : 'rtl';
     document.documentElement.setAttribute('dir', next);
     localStorage.setItem('dir', next);
-    showToast(next === 'rtl' ? 'Switched to RTL layout' : 'Switched to LTR layout', 'info');
+    updateRTLToggleText(toggle, next);
   });
+}
+
+function updateRTLToggleText(toggle, currentDir) {
+  // Show the OPPOSITE of current direction as the action
+  const nextDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+  const textEl = toggle.querySelector('.rtl-text');
+  if (textEl) {
+    textEl.textContent = nextDir.toUpperCase();
+  } else {
+    toggle.textContent = nextDir.toUpperCase();
+  }
 }
 
 /* ===== TOAST NOTIFICATION SYSTEM ===== */

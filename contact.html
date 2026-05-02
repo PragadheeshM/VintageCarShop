@@ -18,21 +18,22 @@
   <!-- NAVBAR -->
   <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 py-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div><span class="font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span></a>
+      <a href="index.html" class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div><span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span></a>
       <div class="hidden xl:flex items-center gap-8 desktop-nav">
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html"><i class="fa-solid fa-home mr-2"></i>Homepage 1</a><a href="index2.html"><i class="fa-solid fa-layer-group mr-2"></i>Homepage 2</a></div></div>
+        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div></div>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="pricing.html" class="nav-link">Pricing</a>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Blog <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="blog.html"><i class="fa-solid fa-newspaper mr-2"></i>Blog Listing</a><a href="blog-details.html"><i class="fa-solid fa-file-lines mr-2"></i>Blog Details</a></div></div>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html"><i class="fa-solid fa-gauge mr-2"></i>User Dashboard</a><a href="admin-dashboard.html"><i class="fa-solid fa-shield mr-2"></i>Admin Dashboard</a></div></div>
+        <a href="blog.html" class="nav-link">Blog</a>
+        
         <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div></div>
       </div>
       <div class="flex items-center gap-3">
-        <button id="dark-mode-toggle" class="w-9 h-9 rounded-full flex items-center justify-center text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
-        <button id="rtl-toggle" class="w-9 h-9 rounded-full flex items-center justify-center text-white/70 hover:text-accent transition"><i class="fa-solid fa-globe"></i></button>
-        <a href="login.html" class="hidden sm:inline-flex btn-outline text-sm !py-2 !px-5">Login</a>
-        <a href="register.html" class="hidden sm:inline-flex btn-primary text-sm !py-2 !px-5">Register</a>
+        <button id="dark-mode-toggle" class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
+        <button id="rtl-toggle" class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
+        <a href="login.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
+        <a href="register.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
         <div id="hamburger" class="hamburger xl:hidden"><span></span><span></span><span></span></div>
       </div>
     </div>
@@ -42,14 +43,12 @@
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="pricing.html">Pricing</a>
-      <a href="#" class="mobile-dropdown-toggle">Blog <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
-      <div class="mobile-submenu"><a href="blog.html">Blog Listing</a><a href="blog-details.html">Blog Details</a></div>
+      <a href="blog.html">Blog</a>
+      
+      <a href="contact.html">Contact</a>
       <a href="#" class="mobile-dropdown-toggle">Dashboard <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
       <div class="mobile-submenu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div>
-      <a href="contact.html">Contact</a>
-      
-      
-    
+
       <div class="px-6 py-4 border-t border-white/10 sm:hidden mobile-auth-links">
         <a href="login.html" class="block py-3 text-white/70 hover:text-accent transition">Login</a>
         <a href="register.html" class="block btn-primary text-center !py-2.5">Register</a>
@@ -60,7 +59,7 @@
   <section class="page-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="section-badge fade-in"><i class="fa-solid fa-envelope"></i> Contact</div>
-      <h1 class="text-4xl sm:text-5xl font-outfit font-800 text-white mb-4 fade-in">Get In <span class="text-accent">Touch</span></h1>
+      <h1 class="text-4xl sm:text-5xl font-outfit font-semibold text-white mb-4 fade-in">Get In <span class="text-accent">Touch</span></h1>
       <nav class="breadcrumb flex items-center gap-2 text-sm fade-in delay-1"><a href="index.html">Home</a><span class="text-white/40">/</span><span class="text-accent">Contact</span></nav>
     </div>
   </section>
@@ -71,19 +70,19 @@
       <div class="grid sm:grid-cols-3 gap-8 mb-16">
         <div class="service-card hover-float hover-glow text-center fade-in">
           <div class="icon-box mx-auto"><i class="fa-solid fa-phone"></i></div>
-          <h3 class="font-outfit font-bold text-lg mb-1">Phone</h3>
+          <h3 class="font-outfit font-semibold text-lg mb-1">Phone</h3>
           <p class="text-txtlight text-sm">+1 (555) 123-4567</p>
           <p class="text-txtlight text-sm">Mon-Sat: 8AM - 6PM</p>
         </div>
         <div class="service-card hover-float hover-glow text-center fade-in delay-1">
           <div class="icon-box mx-auto"><i class="fa-solid fa-envelope"></i></div>
-          <h3 class="font-outfit font-bold text-lg mb-1">Email</h3>
+          <h3 class="font-outfit font-semibold text-lg mb-1">Email</h3>
           <p class="text-txtlight text-sm">info@vintagecars.com</p>
           <p class="text-txtlight text-sm">quotes@vintagecars.com</p>
         </div>
         <div class="service-card hover-float hover-glow text-center fade-in delay-2">
           <div class="icon-box mx-auto"><i class="fa-solid fa-location-dot"></i></div>
-          <h3 class="font-outfit font-bold text-lg mb-1">Location</h3>
+          <h3 class="font-outfit font-semibold text-lg mb-1">Location</h3>
           <p class="text-txtlight text-sm">1234 Classic Car Lane</p>
           <p class="text-txtlight text-sm">Detroit, MI 48201</p>
         </div>
@@ -142,9 +141,9 @@
             </ul>
           </div>
           <div class="service-card" style="background: linear-gradient(135deg, #1a1a2e, #2d2d4a);">
-            <h3 class="font-outfit font-bold text-lg text-white mb-3"><i class="fa-solid fa-clock text-accent mr-2"></i>Emergency Service</h3>
+            <h3 class="font-outfit font-semibold text-lg text-white mb-3"><i class="fa-solid fa-clock text-accent mr-2"></i>Emergency Service</h3>
             <p class="text-white/60 text-sm mb-3">Need immediate assistance with transport or storage for your classic? Our emergency line is available 24/7.</p>
-            <p class="text-accent font-bold text-lg">+1 (555) 911-CARS</p>
+            <p class="text-accent font-semibold text-lg">+1 (555) 911-CARS</p>
           </div>
         </div>
       </div>
@@ -169,7 +168,7 @@
         <div>
           <a href="index.html" class="flex items-center gap-3 mb-4">
             <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
-            <span class="font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span>
+            <span class="font-outfit font-semibold text-xl text-white">Vintage<span class="text-accent">Cars</span></span>
           </a>
           <p class="text-white/50 text-sm leading-relaxed mb-4">Bringing timeless classics back to life since 1987. Our passion is preserving automotive history for future generations.</p>
           <div class="flex gap-3">
@@ -181,7 +180,7 @@
         </div>
         <!-- Quick Links -->
         <div>
-          <h4 class="text-white font-outfit font-bold text-lg mb-4">Quick Links</h4>
+          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li><a href="about.html" class="text-white/50 hover:text-accent transition text-sm">About Us</a></li>
             <li><a href="services.html" class="text-white/50 hover:text-accent transition text-sm">Services</a></li>
@@ -192,7 +191,7 @@
         </div>
         <!-- Services -->
         <div>
-          <h4 class="text-white font-outfit font-bold text-lg mb-4">Services</h4>
+          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Services</h4>
           <ul class="space-y-2">
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full Restoration</a></li>
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom Paint</a></li>
@@ -203,7 +202,7 @@
         </div>
         <!-- Newsletter -->
         <div>
-          <h4 class="text-white font-outfit font-bold text-lg mb-4">Newsletter</h4>
+          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Newsletter</h4>
           <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.</p>
           <form class="newsletter-form flex w-full max-w-full">
             <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">
@@ -212,7 +211,7 @@
         </div>
       </div>
       <div class="border-t border-white/10 pt-6 text-center">
-        <p class="text-white/40 text-sm">&copy; 2026 VintageCars. All rights reserved.</p>
+        <p class="text-white/40 text-sm">&copy; 2026 Vintage<span class="text-accent">Cars</span>. All rights reserved.</p>
       </div>
     </div>
   </footer>

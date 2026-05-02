@@ -21,14 +21,14 @@
     <div class="px-6 mb-8">
       <a href="index.html" class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
-        <span class="font-outfit font-bold text-xl">Vintage<span class="text-accent">Cars</span></span>
+        <span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span>
       </a>
     </div>
     <!-- User -->
     <div class="px-6 mb-6">
-      <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5">
+      <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-transparent">
         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" class="w-10 h-10 rounded-full object-cover" alt="">
-        <div><div class="text-white font-semibold text-sm">Robert Mitchell</div><div class="text-accent text-xs">Premium Member</div></div>
+        <div><div class="text-gray-800 dark:text-white font-semibold text-sm">Robert Mitchell</div><div class="text-accent text-xs">Premium Member</div></div>
       </div>
     </div>
     <nav>
@@ -40,7 +40,7 @@
       <a href="#" class="sidebar-link"><i class="fa-solid fa-bell w-5"></i> Notifications</a>
       <a href="#" class="sidebar-link"><i class="fa-solid fa-gear w-5"></i> Settings</a>
     </nav>
-    <div class="mt-auto px-6 pt-6 border-t border-white/10 mt-8">
+    <div class="mt-auto px-6 pt-6 border-t border-gray-100 dark:border-white/10 mt-8">
       <a href="index.html" class="sidebar-link !px-0"><i class="fa-solid fa-arrow-left w-5"></i> Back to Site</a>
       <a href="login.html" class="sidebar-link !px-0 !text-red-400"><i class="fa-solid fa-right-from-bracket w-5"></i> Logout</a>
     </div>
@@ -53,13 +53,13 @@
       <div class="flex items-center gap-4">
         <button id="sidebar-toggle" class="xl:hidden w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-card"><i class="fa-solid fa-bars text-primary"></i></button>
         <div>
-          <h1 class="text-2xl font-outfit font-800">Dashboard</h1>
+          <h1 class="text-2xl font-outfit font-semibold">Dashboard</h1>
           <p class="text-txtlight text-sm">Welcome back, Robert!</p>
         </div>
       </div>
       <div class="flex items-center gap-3">
-        <button id="dark-mode-toggle" class="w-9 h-9 rounded-full bg-white shadow-card flex items-center justify-center text-primary hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
-        <button id="rtl-toggle" class="w-9 h-9 rounded-full bg-white shadow-card flex items-center justify-center text-primary hover:text-accent transition"><i class="fa-solid fa-globe"></i></button>
+        <button id="dark-mode-toggle" class="w-10 h-10 rounded-full bg-white shadow-card flex items-center justify-center text-primary hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
+        <button id="rtl-toggle" class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
       </div>
     </div>
 
@@ -70,7 +70,7 @@
           <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent"><i class="fa-solid fa-car"></i></div>
           <span class="text-success text-xs font-semibold"><i class="fa-solid fa-arrow-up mr-1"></i>Active</span>
         </div>
-        <div class="text-2xl font-outfit font-800">3</div>
+        <div class="text-2xl font-outfit font-semibold">3</div>
         <p class="text-txtlight text-sm">Cars in Restoration</p>
       </div>
       <div class="stat-card hover-float fade-in delay-1">
@@ -78,7 +78,7 @@
           <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500"><i class="fa-solid fa-calendar-check"></i></div>
           <span class="text-accent text-xs font-semibold">Next: Apr 5</span>
         </div>
-        <div class="text-2xl font-outfit font-800">2</div>
+        <div class="text-2xl font-outfit font-semibold">2</div>
         <p class="text-txtlight text-sm">Upcoming Appointments</p>
       </div>
       <div class="stat-card hover-float fade-in delay-2">
@@ -86,7 +86,7 @@
           <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-500"><i class="fa-solid fa-check-circle"></i></div>
           <span class="text-success text-xs font-semibold">Completed</span>
         </div>
-        <div class="text-2xl font-outfit font-800">7</div>
+        <div class="text-2xl font-outfit font-semibold">7</div>
         <p class="text-txtlight text-sm">Finished Projects</p>
       </div>
       <div class="stat-card hover-float fade-in delay-3">
@@ -94,7 +94,7 @@
           <div class="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500"><i class="fa-solid fa-ticket"></i></div>
           <span class="text-warning text-xs font-semibold">1 Open</span>
         </div>
-        <div class="text-2xl font-outfit font-800">1</div>
+        <div class="text-2xl font-outfit font-semibold">1</div>
         <p class="text-txtlight text-sm">Open Tickets</p>
       </div>
     </div>
@@ -103,7 +103,7 @@
     <div class="grid lg:grid-cols-3 gap-6 mb-8">
       <!-- Active Restorations -->
       <div class="lg:col-span-2 stat-card fade-in">
-        <h3 class="font-outfit font-bold text-lg mb-4">Active Restorations</h3>
+        <h3 class="font-outfit font-semibold text-lg mb-4">Active Restorations</h3>
         <div class="space-y-4">
           <!-- Car 1 -->
           <div class="p-4 rounded-xl bg-secondary flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -143,7 +143,7 @@
 
       <!-- Doughnut Chart -->
       <div class="stat-card fade-in delay-1">
-        <h3 class="font-outfit font-bold text-lg mb-4">Usage / Limits</h3>
+        <h3 class="font-outfit font-semibold text-lg mb-4">Usage / Limits</h3>
         <div class="flex items-center justify-center" style="height: 220px;">
           <canvas id="usageChart"></canvas>
         </div>
@@ -159,7 +159,7 @@
     <div class="grid lg:grid-cols-2 gap-6">
       <!-- Support Tickets -->
       <div class="stat-card fade-in">
-        <h3 class="font-outfit font-bold text-lg mb-4">Support Tickets</h3>
+        <h3 class="font-outfit font-semibold text-lg mb-4">Support Tickets</h3>
         <div class="space-y-3">
           <div class="flex items-center justify-between p-3 rounded-lg bg-secondary">
             <div><h4 class="font-semibold text-sm">#1024 - Paint color mismatch question</h4><p class="text-txtlight text-xs">Opened: Mar 20, 2026</p></div>
@@ -178,7 +178,7 @@
 
       <!-- Recent Activity -->
       <div class="stat-card fade-in delay-1">
-        <h3 class="font-outfit font-bold text-lg mb-4">Recent Activity</h3>
+        <h3 class="font-outfit font-semibold text-lg mb-4">Recent Activity</h3>
         <div class="space-y-4">
           <div class="flex gap-3">
             <div class="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent flex-shrink-0"><i class="fa-solid fa-spray-can-sparkles text-xs"></i></div>

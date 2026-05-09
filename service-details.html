@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Frame-Off Restoration | Vintage Car Restoration Shop</title>
-  <meta name="description" content="Detailed overview of our premium full frame-off restoration service for classic and vintage automobiles.">
+  <meta name="description"
+    content="Detailed overview of our premium full frame-off restoration service for classic and vintage automobiles.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="tailwind-config.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23c8a951' d='M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23c8a951' d='M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z'/%3E%3C/svg%3E"
+    type="image/svg+xml">
 </head>
+
 <body class="font-inter">
 
   <!-- NAVBAR -->
-  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 py-4">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div><span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span></a>
-      <div class="hidden xl:flex items-center gap-8 desktop-nav">
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div></div>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="pricing.html" class="nav-link">Pricing</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        
-        <a href="contact.html" class="nav-link">Contact</a>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div></div>
-      </div>
-      <div class="flex items-center gap-3">
-        <button id="dark-mode-toggle" class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
-        <button id="rtl-toggle" class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
-        <a href="login.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
-        <a href="register.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
-        <div id="hamburger" class="hamburger xl:hidden"><span></span><span></span><span></span></div>
+  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
+          <i class="fa-solid fa-car text-primary text-lg"></i>
+        </div>
+        <span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span
+            class="text-accent">Cars</span></span>
+      </a>
+      <!-- Right Side Content -->
+      <div class="flex items-center gap-10">
+        <!-- Desktop Nav -->
+        <div class="hidden xl:flex items-center gap-10 desktop-nav">
+          <div class="nav-dropdown"><a href="#" class="nav-link active flex items-center gap-1">Home <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div>
+          </div>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a
+                href="admin-dashboard.html">Admin Dashboard</a></div>
+          </div>
+        </div>
+        <!-- Right actions -->
+        <div class="flex items-center gap-3">
+          <button id="dark-mode-toggle"
+            class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i
+              class="fa-solid fa-moon"></i></button>
+          <button id="rtl-toggle"
+            class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
+          <a href="login.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
+          <a href="register.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
+          <div id="hamburger" class="hamburger xl:hidden">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
       </div>
     </div>
+    </div>
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu xl:hidden">
       <a href="#" class="mobile-dropdown-toggle">Home <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
       <div class="mobile-submenu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div>
@@ -44,23 +78,28 @@
       <a href="services.html">Services</a>
       <a href="pricing.html">Pricing</a>
       <a href="blog.html">Blog</a>
-      
+
       <a href="contact.html">Contact</a>
       <a href="#" class="mobile-dropdown-toggle">Dashboard <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
-      <div class="mobile-submenu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div>
+      <div class="mobile-submenu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin
+          Dashboard</a></div>
 
       <div class="px-6 py-4 border-t border-white/10 sm:hidden mobile-auth-links">
         <a href="login.html" class="block py-3 text-white/70 hover:text-accent transition">Login</a>
         <a href="register.html" class="block btn-primary text-center !py-2.5">Register</a>
-      </div></div>
+      </div>
+    </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="section-badge fade-in"><i class="fa-solid fa-car-side"></i> Service Detail</div>
-      <h1 class="text-4xl sm:text-5xl font-outfit font-semibold text-white mb-4 fade-in">Full Frame-Off <span class="text-accent">Restoration</span></h1>
-      <nav class="breadcrumb flex items-center gap-2 text-sm fade-in delay-1"><a href="index.html">Home</a><span class="text-white/40">/</span><a href="services.html">Services</a><span class="text-white/40">/</span><span class="text-accent">Full Restoration</span></nav>
+      <h1 class="text-4xl sm:text-5xl font-outfit font-bold text-white mb-4 fade-in">Full Frame-Off <span
+          class="text-accent">Restoration</span></h1>
+      <nav class="breadcrumb flex items-center gap-2 text-sm fade-in delay-1"><a href="index.html">Home</a><span
+          class="text-white/40">/</span><a href="services.html">Services</a><span class="text-white/40">/</span><span
+          class="text-accent">Full Restoration</span></nav>
     </div>
   </section>
 
@@ -71,56 +110,123 @@
         <!-- Main Content -->
         <div class="lg:col-span-2">
           <div class="rounded-2xl overflow-hidden mb-8 fade-in">
-            <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&h=450&fit=crop" alt="Full restoration workshop" class="w-full h-[400px] object-cover">
+            <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&h=450&fit=crop"
+              alt="Full restoration workshop" class="w-full h-[400px] object-cover">
           </div>
-          <h2 class="section-title text-2xl mb-4 fade-in">The Ultimate Restoration <span class="text-accent">Experience</span></h2>
-          <p class="text-txtlight leading-relaxed mb-4 fade-in">Our full frame-off restoration is the pinnacle of classic car restoration. Every component is carefully removed, cataloged, and either restored or replaced with period-correct parts. The body is separated from the frame, both are media-blasted, and the entire vehicle is rebuilt from the ground up.</p>
-          <p class="text-txtlight leading-relaxed mb-8 fade-in">This process typically takes 12-18 months depending on the vehicle's condition and the level of customization desired. Our team documents every step with detailed photography so you can follow along with your car's journey back to glory.</p>
+          <h2 class="section-title text-2xl mb-4 fade-in">The Ultimate Restoration <span
+              class="text-accent">Experience</span></h2>
+          <p class="text-txtlight leading-relaxed mb-4 fade-in">Our full frame-off restoration is the pinnacle of
+            classic car restoration. Every component is carefully removed, cataloged, and either restored or replaced
+            with period-correct parts. The body is separated from the frame, both are media-blasted, and the entire
+            vehicle is rebuilt from the ground up.</p>
+          <p class="text-txtlight leading-relaxed mb-8 fade-in">This process typically takes 12-18 months depending on
+            the vehicle's condition and the level of customization desired. Our team documents every step with detailed
+            photography so you can follow along with your car's journey back to glory.</p>
 
           <!-- What's Included -->
-          <h3 class="font-outfit font-semibold text-xl mb-4 fade-in">What's Included</h3>
+          <h3 class="font-outfit font-bold text-xl mb-4 fade-in">What's Included</h3>
           <div class="grid sm:grid-cols-2 gap-3 mb-10">
-            <div class="flex items-center gap-3 fade-in"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Complete disassembly & cataloging</span></div>
-            <div class="flex items-center gap-3 fade-in delay-1"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Media blasting & rust treatment</span></div>
-            <div class="flex items-center gap-3 fade-in"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Body & panel straightening</span></div>
-            <div class="flex items-center gap-3 fade-in delay-1"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Period-correct paint application</span></div>
-            <div class="flex items-center gap-3 fade-in"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Engine rebuild & dyno testing</span></div>
-            <div class="flex items-center gap-3 fade-in delay-1"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Transmission overhaul</span></div>
-            <div class="flex items-center gap-3 fade-in"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Complete interior restoration</span></div>
-            <div class="flex items-center gap-3 fade-in delay-1"><div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i class="fa-solid fa-check"></i></div><span class="text-sm">Full photo documentation</span></div>
+            <div class="flex items-center gap-3 fade-in">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Complete disassembly & cataloging</span>
+            </div>
+            <div class="flex items-center gap-3 fade-in delay-1">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Media blasting & rust treatment</span>
+            </div>
+            <div class="flex items-center gap-3 fade-in">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Body & panel straightening</span>
+            </div>
+            <div class="flex items-center gap-3 fade-in delay-1">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Period-correct paint application</span>
+            </div>
+            <div class="flex items-center gap-3 fade-in">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Engine rebuild & dyno testing</span>
+            </div>
+            <div class="flex items-center gap-3 fade-in delay-1">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Transmission overhaul</span>
+            </div>
+            <div class="flex items-center gap-3 fade-in">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Complete interior restoration</span>
+            </div>
+            <div class="flex items-center gap-3 fade-in delay-1">
+              <div class="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-sm"><i
+                  class="fa-solid fa-check"></i></div><span class="text-sm">Full photo documentation</span>
+            </div>
           </div>
 
           <!-- Pricing Table -->
-          <h3 class="font-outfit font-semibold text-xl mb-4 fade-in">Pricing Tiers</h3>
+          <h3 class="font-outfit font-bold text-xl mb-4 fade-in">Pricing Tiers</h3>
           <div class="overflow-x-auto mb-10 fade-in">
             <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
-              <thead><tr class="bg-primary text-white"><th class="py-3 px-4 text-left font-outfit">Package</th><th class="py-3 px-4 text-left font-outfit">Scope</th><th class="py-3 px-4 text-right font-outfit">Starting Price</th></tr></thead>
+              <thead>
+                <tr class="bg-primary text-white">
+                  <th class="py-3 px-4 text-left font-outfit">Package</th>
+                  <th class="py-3 px-4 text-left font-outfit">Scope</th>
+                  <th class="py-3 px-4 text-right font-outfit">Starting Price</th>
+                </tr>
+              </thead>
               <tbody>
-                <tr class="border-b border-gray-100"><td class="py-3 px-4 font-medium">Driver Quality</td><td class="py-3 px-4 text-txtlight">Functional restoration for regular driving</td><td class="py-3 px-4 text-right text-accent font-semibold">$25,000</td></tr>
-                <tr class="border-b border-gray-100 bg-gray-50"><td class="py-3 px-4 font-medium">Show Quality</td><td class="py-3 px-4 text-txtlight">High-quality finish for car shows</td><td class="py-3 px-4 text-right text-accent font-semibold">$50,000</td></tr>
-                <tr><td class="py-3 px-4 font-medium">Concours Quality</td><td class="py-3 px-4 text-txtlight">Museum-grade, award-winning restoration</td><td class="py-3 px-4 text-right text-accent font-semibold">$85,000+</td></tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 px-4 font-medium">Driver Quality</td>
+                  <td class="py-3 px-4 text-txtlight">Functional restoration for regular driving</td>
+                  <td class="py-3 px-4 text-right text-accent font-semibold">$25,000</td>
+                </tr>
+                <tr class="border-b border-gray-100 bg-gray-50">
+                  <td class="py-3 px-4 font-medium">Show Quality</td>
+                  <td class="py-3 px-4 text-txtlight">High-quality finish for car shows</td>
+                  <td class="py-3 px-4 text-right text-accent font-semibold">$50,000</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 font-medium">Concours Quality</td>
+                  <td class="py-3 px-4 text-txtlight">Museum-grade, award-winning restoration</td>
+                  <td class="py-3 px-4 text-right text-accent font-semibold">$85,000+</td>
+                </tr>
               </tbody>
             </table>
           </div>
 
           <!-- FAQ Accordion -->
-          <h3 class="font-outfit font-semibold text-xl mb-4 fade-in">Frequently Asked Questions</h3>
+          <h3 class="font-outfit font-bold text-xl mb-4 fade-in">Frequently Asked Questions</h3>
           <div class="accordion-group fade-in">
             <div class="accordion-item active">
-              <div class="accordion-header">How long does a full restoration take? <i class="fa-solid fa-chevron-down"></i></div>
-              <div class="accordion-body"><div class="accordion-body-inner">A complete frame-off restoration typically takes 12-18 months, depending on the vehicle's condition, parts availability, and level of customization. We provide regular updates and detailed timelines throughout the process.</div></div>
+              <div class="accordion-header">How long does a full restoration take? <i
+                  class="fa-solid fa-chevron-down"></i></div>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">A complete frame-off restoration typically takes 12-18 months,
+                  depending on the vehicle's condition, parts availability, and level of customization. We provide
+                  regular updates and detailed timelines throughout the process.</div>
+              </div>
             </div>
             <div class="accordion-item">
               <div class="accordion-header">Do you source original parts? <i class="fa-solid fa-chevron-down"></i></div>
-              <div class="accordion-body"><div class="accordion-body-inner">Yes, we have an extensive network of suppliers for NOS (New Old Stock) and reproduction parts. We always prioritize original parts and will source them globally to ensure authenticity.</div></div>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">Yes, we have an extensive network of suppliers for NOS (New Old Stock)
+                  and reproduction parts. We always prioritize original parts and will source them globally to ensure
+                  authenticity.</div>
+              </div>
             </div>
             <div class="accordion-item">
-              <div class="accordion-header">Can I visit during the restoration? <i class="fa-solid fa-chevron-down"></i></div>
-              <div class="accordion-body"><div class="accordion-body-inner">Absolutely! We encourage owners to visit and see their vehicle's progress. We also provide a secure online portal with weekly photo updates so you can follow along remotely.</div></div>
+              <div class="accordion-header">Can I visit during the restoration? <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">Absolutely! We encourage owners to visit and see their vehicle's
+                  progress. We also provide a secure online portal with weekly photo updates so you can follow along
+                  remotely.</div>
+              </div>
             </div>
             <div class="accordion-item">
-              <div class="accordion-header">Do you offer warranty on restorations? <i class="fa-solid fa-chevron-down"></i></div>
-              <div class="accordion-body"><div class="accordion-body-inner">Yes, all full restorations come with a comprehensive 2-year warranty covering all mechanical work and a 5-year warranty on paint and bodywork.</div></div>
+              <div class="accordion-header">Do you offer warranty on restorations? <i
+                  class="fa-solid fa-chevron-down"></i></div>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">Yes, all full restorations come with a comprehensive 2-year warranty
+                  covering all mechanical work and a 5-year warranty on paint and bodywork.</div>
+              </div>
             </div>
           </div>
         </div>
@@ -130,27 +236,42 @@
           <div class="sticky top-24 space-y-6">
             <!-- Contact Card -->
             <div class="service-card fade-in">
-              <h3 class="font-outfit font-semibold text-lg mb-4">Get a Free Quote</h3>
-              <p class="text-txtlight text-sm mb-4">Tell us about your project and we'll provide a detailed estimate.</p>
-              <a href="contact.html" class="btn-primary w-full justify-center"><i class="fa-solid fa-phone"></i> Contact Us</a>
+              <h3 class="font-outfit font-bold text-lg mb-4">Get a Free Quote</h3>
+              <p class="text-txtlight text-sm mb-4">Tell us about your project and we'll provide a detailed estimate.
+              </p>
+              <a href="contact.html" class="btn-primary w-full justify-center"><i class="fa-solid fa-phone"></i> Contact
+                Us</a>
             </div>
             <!-- Other Services -->
             <div class="service-card fade-in delay-1">
-              <h3 class="font-outfit font-semibold text-lg mb-4">Other Services</h3>
+              <h3 class="font-outfit font-bold text-lg mb-4">Other Services</h3>
               <ul class="space-y-3">
-                <li><a href="service-details.html" class="flex items-center gap-3 text-sm hover:text-accent transition"><i class="fa-solid fa-spray-can-sparkles text-accent"></i> Custom Paint & Bodywork</a></li>
-                <li><a href="service-details.html" class="flex items-center gap-3 text-sm hover:text-accent transition"><i class="fa-solid fa-gears text-accent"></i> Engine Rebuild & Tuning</a></li>
-                <li><a href="service-details.html" class="flex items-center gap-3 text-sm hover:text-accent transition"><i class="fa-solid fa-couch text-accent"></i> Interior & Upholstery</a></li>
-                <li><a href="service-details.html" class="flex items-center gap-3 text-sm hover:text-accent transition"><i class="fa-solid fa-bolt text-accent"></i> Electrical & Wiring</a></li>
-                <li><a href="service-details.html" class="flex items-center gap-3 text-sm hover:text-accent transition"><i class="fa-solid fa-magnifying-glass text-accent"></i> Inspection & Appraisal</a></li>
+                <li><a href="service-details.html"
+                    class="flex items-center gap-3 text-sm hover:text-accent transition"><i
+                      class="fa-solid fa-spray-can-sparkles text-accent"></i> Custom Paint & Bodywork</a></li>
+                <li><a href="service-details.html"
+                    class="flex items-center gap-3 text-sm hover:text-accent transition"><i
+                      class="fa-solid fa-gears text-accent"></i> Engine Rebuild & Tuning</a></li>
+                <li><a href="service-details.html"
+                    class="flex items-center gap-3 text-sm hover:text-accent transition"><i
+                      class="fa-solid fa-couch text-accent"></i> Interior & Upholstery</a></li>
+                <li><a href="service-details.html"
+                    class="flex items-center gap-3 text-sm hover:text-accent transition"><i
+                      class="fa-solid fa-bolt text-accent"></i> Electrical & Wiring</a></li>
+                <li><a href="service-details.html"
+                    class="flex items-center gap-3 text-sm hover:text-accent transition"><i
+                      class="fa-solid fa-magnifying-glass text-accent"></i> Inspection & Appraisal</a></li>
               </ul>
             </div>
             <!-- Download Brochure -->
-            <div class="service-card fade-in delay-2 text-center" style="background: linear-gradient(135deg, #1a1a2e, #2d2d4a);">
+            <div class="service-card fade-in delay-2 text-center"
+              style="background: linear-gradient(135deg, #1a1a2e, #2d2d4a);">
               <i class="fa-solid fa-file-pdf text-accent text-3xl mb-3"></i>
-              <h3 class="font-outfit font-semibold text-lg text-white mb-2">Download Brochure</h3>
+              <h3 class="font-outfit font-bold text-lg text-white mb-2">Download Brochure</h3>
               <p class="text-white/50 text-sm mb-4">Get our complete service catalog in PDF format.</p>
-              <button class="btn-outline !border-accent !text-accent w-full justify-center" onclick="showToast('Brochure download started!', 'success')"><i class="fa-solid fa-download"></i> Download PDF</button>
+              <button class="btn-outline !border-accent !text-accent w-full justify-center"
+                onclick="showToast('Brochure download started!', 'success')"><i class="fa-solid fa-download"></i>
+                Download PDF</button>
             </div>
           </div>
         </div>
@@ -166,20 +287,31 @@
         <!-- Brand -->
         <div>
           <a href="index.html" class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
-            <span class="font-outfit font-semibold text-xl text-white">Vintage<span class="text-accent">Cars</span></span>
+            <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i
+                class="fa-solid fa-car text-primary text-lg"></i></div>
+            <span class="font-outfit font-semibold text-xl text-white">Vintage<span
+                class="text-accent">Cars</span></span>
           </a>
-          <p class="text-white/50 text-sm leading-relaxed mb-4">Bringing timeless classics back to life since 1987. Our passion is preserving automotive history for future generations.</p>
+          <p class="text-white/50 text-sm leading-relaxed mb-4">Bringing timeless classics back to life since 1987. Our
+            passion is preserving automotive history for future generations.</p>
           <div class="flex gap-3">
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
         <!-- Quick Links -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Quick Links</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li><a href="about.html" class="text-white/50 hover:text-accent transition text-sm">About Us</a></li>
             <li><a href="services.html" class="text-white/50 hover:text-accent transition text-sm">Services</a></li>
@@ -190,30 +322,41 @@
         </div>
         <!-- Services -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Services</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Services</h4>
           <ul class="space-y-2">
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full Restoration</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom Paint</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Engine Rebuild</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Upholstery</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Inspections</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full
+                Restoration</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom
+                Paint</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Engine
+                Rebuild</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Upholstery</a>
+            </li>
+            <li><a href="service-details.html"
+                class="text-white/50 hover:text-accent transition text-sm">Inspections</a></li>
           </ul>
         </div>
         <!-- Newsletter -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Newsletter</h4>
-          <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.</p>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Newsletter</h4>
+          <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.
+          </p>
           <form class="newsletter-form flex w-full max-w-full">
-            <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">
-            <button type="submit" class="px-4 py-2.5 bg-accent text-primary rounded-r-lg font-semibold text-sm hover:bg-accent-light transition"><i class="fa-solid fa-paper-plane"></i></button>
+            <input type="email" placeholder="Your email" required
+              class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">
+            <button type="submit"
+              class="px-4 py-2.5 bg-accent text-primary rounded-r-lg font-semibold text-sm hover:bg-accent-light transition"><i
+                class="fa-solid fa-paper-plane"></i></button>
           </form>
         </div>
       </div>
       <div class="border-t border-white/10 pt-6 text-center">
-        <p class="text-white/40 text-sm">&copy; 2026 Vintage<span class="text-accent">Cars</span>. All rights reserved.</p>
+        <p class="text-white/40 text-sm">&copy; 2026 Vintage<span class="text-accent">Cars</span>. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
   <script src="main.js"></script>
 </body>
+
 </html>

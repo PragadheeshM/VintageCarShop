@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Services | Vintage Car Restoration Shop</title>
-  <meta name="description" content="Explore our complete range of vintage car restoration services including full restoration, custom paint, engine rebuild, upholstery, and more.">
+  <meta name="description"
+    content="Explore our complete range of vintage car restoration services including full restoration, custom paint, engine rebuild, upholstery, and more.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="tailwind-config.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23c8a951' d='M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23c8a951' d='M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z'/%3E%3C/svg%3E"
+    type="image/svg+xml">
 </head>
+
 <body class="font-inter">
 
   <!-- NAVBAR -->
-  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 py-4">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div><span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span></a>
-      <div class="hidden xl:flex items-center gap-8 desktop-nav">
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div></div>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="pricing.html" class="nav-link">Pricing</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        
-        <a href="contact.html" class="nav-link">Contact</a>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div></div>
-      </div>
-      <div class="flex items-center gap-3">
-        <button id="dark-mode-toggle" class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
-        <button id="rtl-toggle" class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
-        <a href="login.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
-        <a href="register.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
-        <div id="hamburger" class="hamburger xl:hidden"><span></span><span></span><span></span></div>
+  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i
+            class="fa-solid fa-car text-primary text-lg"></i></div><span
+          class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span
+            class="text-accent">Cars</span></span>
+      </a>
+      <!-- Right Side Content -->
+      <div class="flex items-center gap-10">
+        <!-- Desktop Nav -->
+        <div class="hidden xl:flex items-center gap-10 desktop-nav">
+          <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div>
+          </div>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a
+                href="admin-dashboard.html">Admin Dashboard</a></div>
+          </div>
+        </div>
+        <!-- Right actions -->
+        <div class="flex items-center gap-3">
+          <button id="dark-mode-toggle"
+            class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i
+              class="fa-solid fa-moon"></i></button>
+          <button id="rtl-toggle"
+            class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
+          <a href="login.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
+          <a href="register.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
+          <div id="hamburger" class="hamburger xl:hidden">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
       </div>
     </div>
     <div id="mobile-menu" class="mobile-menu xl:hidden">
@@ -44,143 +74,261 @@
       <a href="services.html">Services</a>
       <a href="pricing.html">Pricing</a>
       <a href="blog.html">Blog</a>
-      
+
       <a href="contact.html">Contact</a>
       <a href="#" class="mobile-dropdown-toggle">Dashboard <i class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
-      <div class="mobile-submenu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div>
+      <div class="mobile-submenu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin
+          Dashboard</a></div>
 
       <div class="px-6 py-4 border-t border-white/10 sm:hidden mobile-auth-links">
         <a href="login.html" class="block py-3 text-white/70 hover:text-accent transition">Login</a>
         <a href="register.html" class="block btn-primary text-center !py-2.5">Register</a>
-      </div></div>
+      </div>
+    </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="section-badge fade-in"><i class="fa-solid fa-wrench"></i> Our Services</div>
-      <h1 class="text-4xl sm:text-5xl font-outfit font-semibold text-white mb-4 fade-in">What We <span class="text-accent">Offer</span></h1>
-      <nav class="breadcrumb flex items-center gap-2 text-sm fade-in delay-1"><a href="index.html">Home</a><span class="text-white/40">/</span><span class="text-accent">Services</span></nav>
+      <h1 class="text-4xl sm:text-5xl font-outfit font-bold text-white mb-4 fade-in">What We <span
+          class="text-accent">Offer</span></h1>
+      <nav class="breadcrumb flex items-center gap-2 text-sm fade-in delay-1"><a href="index.html">Home</a><span
+          class="text-white/40">/</span><span class="text-accent">Services</span></nav>
     </div>
   </section>
 
   <!-- SERVICES GRID -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-section-alt">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14">
         <h2 class="section-title fade-in">Complete Restoration <span class="text-accent">Solutions</span></h2>
-        <p class="section-subtitle fade-in delay-1 font-medium">From bumper to bumper, we have every aspect of your classic car restoration covered.</p>
+        <p class="section-subtitle fade-in delay-1">From bumper to bumper, we have every aspect of your classic car
+          restoration covered.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <div class="service-card hover-float hover-glow fade-in">
-          <div class="icon-box"><i class="fa-solid fa-car-side"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Full Frame-Off Restoration</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Complete disassembly, restoration of every component, and meticulous reassembly to concours standards.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Full Restoration">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-car-side"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Full Frame-Off Restoration</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Complete disassembly, restoration of every component,
+              and meticulous reassembly to concours standards.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 2 -->
-        <div class="service-card hover-float hover-glow fade-in delay-1">
-          <div class="icon-box"><i class="fa-solid fa-spray-can-sparkles"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Custom Paint & Bodywork</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Period-correct color matching, dent removal, rust repair, and show-quality paint finishes.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in delay-1 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/custom-paint.png" class="w-full h-full object-cover" alt="Custom Paint">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Custom Paint & Bodywork</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Period-correct color matching, dent removal, rust
+              repair, and show-quality paint finishes.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 3 -->
-        <div class="service-card hover-float hover-glow fade-in delay-2">
-          <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Engine Rebuild & Tuning</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Complete engine overhaul, machining, balancing, and dyno testing for peak performance.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in delay-2 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Engine Rebuild">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-gears"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Engine Rebuild & Tuning</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Complete engine overhaul, machining, balancing, and
+              dyno testing for peak performance.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 4 -->
-        <div class="service-card hover-float hover-glow fade-in">
-          <div class="icon-box"><i class="fa-solid fa-couch"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Interior & Upholstery</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Hand-stitched leather, custom carpets, headliner replacement, and dashboard restoration.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Interior Upholstery">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-couch"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Interior & Upholstery</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Hand-stitched leather, custom carpets, headliner
+              replacement, and dashboard restoration.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 5 -->
-        <div class="service-card hover-float hover-glow fade-in delay-1">
-          <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Electrical & Wiring</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Complete rewiring, gauge restoration, lighting upgrades while maintaining authentic appearance.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in delay-1 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1616788494707-ec28f08d05a1?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Electrical">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-bolt"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Electrical & Wiring</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Complete rewiring, gauge restoration, lighting
+              upgrades while maintaining authentic appearance.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 6 -->
-        <div class="service-card hover-float hover-glow fade-in delay-2">
-          <div class="icon-box"><i class="fa-solid fa-magnifying-glass"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Inspection & Appraisal</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Pre-purchase inspections, insurance appraisals, and concours judging preparation.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in delay-2 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Inspection">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Inspection & Appraisal</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Pre-purchase inspections, insurance appraisals, and
+              concours judging preparation.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 7 -->
-        <div class="service-card hover-float hover-glow fade-in">
-          <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Chrome & Metal Work</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Chrome plating, stainless steel polishing, and custom metal fabrication for missing parts.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/images/metal-work.png" class="w-full h-full object-cover" alt="Metal Work">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Chrome & Metal Work</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Chrome plating, stainless steel polishing, and custom
+              metal fabrication for missing parts.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 8 -->
-        <div class="service-card hover-float hover-glow fade-in delay-1">
-          <div class="icon-box"><i class="fa-solid fa-truck-pickup"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Transport & Storage</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Climate-controlled storage and enclosed transport for your precious classic anywhere in the country.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in delay-1 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Transport">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-truck-pickup"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Transport & Storage</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Climate-controlled storage and enclosed transport for
+              your precious classic anywhere in the country.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
         <!-- Card 9 -->
-        <div class="service-card hover-float hover-glow fade-in delay-2">
-          <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Sourcing & Parts</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Tracking down rare, discontinued, or NOS (New Old Stock) vintage parts to maintain absolute authenticity.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <div class="service-card hover-float hover-glow fade-in delay-2 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Parts">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Sourcing & Parts</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Tracking down rare, discontinued, or NOS (New Old
+              Stock) vintage parts to maintain absolute authenticity.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
-        <!-- Card 10 - NEW -->
-        <div class="service-card hover-float hover-glow fade-in">
-          <div class="icon-box"><i class="fa-solid fa-plug-circle-bolt"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">EV Classic Conversion</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Combine iconic style with modern reliability through our premium electric powertrain retrofitting services.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <!-- Card 10 -->
+        <div class="service-card hover-float hover-glow fade-in !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="EV Conversion">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">EV Classic Conversion</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Combine iconic style with modern reliability through
+              our premium electric powertrain retrofitting services.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
-        <!-- Card 11 - NEW -->
-        <div class="service-card hover-float hover-glow fade-in delay-1">
-          <div class="icon-box"><i class="fa-solid fa-gauge-high"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Vintage Race Prep</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Roll cages, fire suppression, and precision track tuning to get your classic ready for the historic racing circuit.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <!-- Card 11 -->
+        <div class="service-card hover-float hover-glow fade-in delay-1 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Race Prep">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Vintage Race Prep</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Roll cages, fire suppression, and precision track
+              tuning to get your classic ready for the historic racing circuit.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
-        <!-- Card 12 - NEW -->
-        <div class="service-card hover-float hover-glow fade-in delay-2">
-          <div class="icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Premium Detail & Protect</h3>
-          <p class="text-txtlight text-sm leading-relaxed mb-4">Paint correction, ceramic coating, and museum-grade preservation for those who demand the ultimate finish.</p>
-          <a href="service-details.html" class="text-accent font-semibold text-sm hover:underline">Learn More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        <!-- Card 12 -->
+        <div class="service-card hover-float hover-glow fade-in delay-2 !p-0 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&h=400&fit=crop"
+              class="w-full h-full object-cover" alt="Detailing">
+          </div>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="icon-box !mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3 class="font-outfit font-bold text-xl mb-2">Premium Detail & Protect</h3>
+            <p class="text-txtlight text-sm leading-relaxed mb-4">Paint correction, ceramic coating, and museum-grade
+              preservation for those who demand the ultimate finish.</p>
+            <a href="service-details.html"
+              class="text-accent font-semibold text-sm hover:underline mt-auto inline-block">Learn More <i
+                class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MAINTENANCE PLANS - NEW SECTION -->
-  <section class="py-20 bg-secondary">
+  <!-- MAINTENANCE PLANS -->
+  <section class="py-20 bg-section-alt">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="fade-in">
           <div class="section-badge"><i class="fa-solid fa-calendar-check"></i> Preservation</div>
           <h2 class="section-title text-3xl mb-6">Long-Term Maintenance <span class="text-accent">Plans</span></h2>
-          <p class="text-txtlight mb-8 italic">"A restoration is an investment that requires expert care to maintain its value and performance."</p>
+          <p class="text-txtlight mb-8 italic">"A restoration is an investment that requires expert care to maintain its
+            value and performance."</p>
           <div class="space-y-4">
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent flex-shrink-0 mt-1"><i class="fa-solid fa-shield"></i></div>
+              <div
+                class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent flex-shrink-0 mt-1">
+                <i class="fa-solid fa-shield"></i></div>
               <div>
-                <h4 class="font-outfit font-semibold text-lg">Preservation Package</h4>
-                <p class="text-txtlight text-sm">Quarterly deep cleaning, fluids check, and climate-controlled exercise to prevent seal drying.</p>
+                <h4 class="font-outfit font-bold text-lg">Preservation Package</h4>
+                <p class="text-txtlight text-sm">Quarterly deep cleaning, fluids check, and climate-controlled exercise
+                  to prevent seal drying.</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent flex-shrink-0 mt-1"><i class="fa-solid fa-microchip"></i></div>
+              <div
+                class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent flex-shrink-0 mt-1">
+                <i class="fa-solid fa-microchip"></i></div>
               <div>
-                <h4 class="font-outfit font-semibold text-lg">Diagnostics & Tuning</h4>
-                <p class="text-txtlight text-sm">Monthly engine diagnostics and seasonal carb/timing adjustments to ensure perfect reliability.</p>
+                <h4 class="font-outfit font-bold text-lg">Diagnostics & Tuning</h4>
+                <p class="text-txtlight text-sm">Monthly engine diagnostics and seasonal carb/timing adjustments to
+                  ensure perfect reliability.</p>
               </div>
             </div>
           </div>
@@ -188,9 +336,11 @@
         </div>
         <div class="relative fade-in delay-1">
           <div class="rounded-2xl overflow-hidden shadow-glass-lg">
-            <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&h=600&fit=crop" alt="Classic car maintenance" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&h=600&fit=crop"
+              alt="Classic car maintenance" class="w-full h-full object-cover">
           </div>
-          <div class="absolute -bottom-6 -right-6 bg-white dark:bg-primary-light p-6 rounded-2xl shadow-card hidden md:block">
+          <div
+            class="absolute -bottom-6 -right-6 bg-white dark:bg-[#111111] p-6 rounded-2xl shadow-card hidden md:block">
             <div class="text-primary dark:text-accent font-outfit font-semibold text-xl mb-1">24/7 Monitoring</div>
             <p class="text-txtlight dark:text-white/60 text-xs">For all stored vehicles</p>
           </div>
@@ -200,36 +350,47 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-20 relative overflow-hidden" style="background: linear-gradient(135deg, #1a1a2e 0%, #c8a951 100%);">
+  <section class="py-20 relative overflow-hidden bg-primary">
     <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-      <h2 class="text-3xl sm:text-4xl font-outfit font-semibold text-white mb-4 fade-in">Not Sure What You Need?</h2>
-      <p class="text-white/70 text-lg mb-8 fade-in delay-1">Schedule a free consultation — we'll assess your car and recommend the best restoration plan.</p>
-      <a href="contact.html" class="btn-primary text-lg !py-3.5 !px-10 fade-in delay-2"><i class="fa-solid fa-phone"></i> Free Consultation</a>
+      <h2 class="text-3xl sm:text-4xl font-outfit font-bold text-white mb-4">Ready to Start Your Project?</h2>
+      <p class="text-white/70 text-lg mb-8">Contact us today for a free consultation and project estimate.</p>
+      <a href="contact.html" class="btn-primary text-lg !py-3.5 !px-10"><i class="fa-solid fa-phone"></i> Get in
+        Touch</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <!-- ===== FOOTER ===== -->
   <footer class="bg-primary pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 mb-12">
         <!-- Brand -->
         <div>
           <a href="index.html" class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div>
-            <span class="font-outfit font-semibold text-xl text-white">Vintage<span class="text-accent">Cars</span></span>
+            <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i
+                class="fa-solid fa-car text-primary text-lg"></i></div>
+            <span class="font-outfit font-semibold text-xl text-white">Vintage<span
+                class="text-accent">Cars</span></span>
           </a>
-          <p class="text-white/50 text-sm leading-relaxed mb-4">Bringing timeless classics back to life since 1987. Our passion is preserving automotive history for future generations.</p>
+          <p class="text-white/50 text-sm leading-relaxed mb-4">Bringing timeless classics back to life since 1987. Our
+            passion is preserving automotive history for future generations.</p>
           <div class="flex gap-3">
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="#"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-accent hover:text-primary transition"><i
+                class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
         <!-- Quick Links -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Quick Links</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li><a href="about.html" class="text-white/50 hover:text-accent transition text-sm">About Us</a></li>
             <li><a href="services.html" class="text-white/50 hover:text-accent transition text-sm">Services</a></li>
@@ -240,31 +401,42 @@
         </div>
         <!-- Services -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Services</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Services</h4>
           <ul class="space-y-2">
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full Restoration</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom Paint</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Engine Rebuild</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Upholstery</a></li>
-            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Inspections</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full
+                Restoration</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom
+                Paint</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Engine
+                Rebuild</a></li>
+            <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Upholstery</a>
+            </li>
+            <li><a href="service-details.html"
+                class="text-white/50 hover:text-accent transition text-sm">Inspections</a></li>
           </ul>
         </div>
         <!-- Newsletter -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Newsletter</h4>
-          <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.</p>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Newsletter</h4>
+          <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.
+          </p>
           <form class="newsletter-form flex w-full max-w-full">
-            <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">
-            <button type="submit" class="px-4 py-2.5 bg-accent text-primary rounded-r-lg font-semibold text-sm hover:bg-accent-light transition"><i class="fa-solid fa-paper-plane"></i></button>
+            <input type="email" placeholder="Your email" required
+              class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">
+            <button type="submit"
+              class="px-4 py-2.5 bg-accent text-primary rounded-r-lg font-semibold text-sm hover:bg-accent-light transition"><i
+                class="fa-solid fa-paper-plane"></i></button>
           </form>
         </div>
       </div>
       <div class="border-t border-white/10 pt-6 text-center">
-        <p class="text-white/40 text-sm">&copy; 2026 Vintage<span class="text-accent">Cars</span>. All rights reserved.</p>
+        <p class="text-white/40 text-sm">&copy; 2026 Vintage<span class="text-accent">Cars</span>. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
 
   <script src="main.js"></script>
 </body>
+
 </html>

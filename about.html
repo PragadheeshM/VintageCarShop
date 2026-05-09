@@ -16,25 +16,50 @@
 <body class="font-inter">
 
   <!-- NAVBAR -->
-  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 py-4">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div><span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span></a>
-      <div class="hidden xl:flex items-center gap-8 desktop-nav">
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div></div>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="pricing.html" class="nav-link">Pricing</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        
-        <a href="contact.html" class="nav-link">Contact</a>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div></div>
-      </div>
-      <div class="flex items-center gap-3">
-        <button id="dark-mode-toggle" class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
-        <button id="rtl-toggle" class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
-        <a href="login.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
-        <a href="register.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
-        <div id="hamburger" class="hamburger xl:hidden"><span></span><span></span><span></span></div>
+  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
+          <i class="fa-solid fa-car text-primary text-lg"></i>
+        </div>
+        <span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span
+            class="text-accent">Cars</span></span>
+      </a>
+      <!-- Right Side Content -->
+      <div class="flex items-center gap-10">
+        <!-- Desktop Nav -->
+        <div class="hidden xl:flex items-center gap-10 desktop-nav">
+          <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div>
+          </div>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a
+                href="admin-dashboard.html">Admin Dashboard</a></div>
+          </div>
+        </div>
+        <!-- Right actions -->
+        <div class="flex items-center gap-3">
+          <button id="dark-mode-toggle"
+            class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i
+              class="fa-solid fa-moon"></i></button>
+          <button id="rtl-toggle"
+            class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
+          <a href="login.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
+          <a href="register.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
+          <div id="hamburger" class="hamburger xl:hidden">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
       </div>
     </div>
     <div id="mobile-menu" class="mobile-menu xl:hidden">
@@ -59,7 +84,7 @@
   <section class="page-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="section-badge fade-in"><i class="fa-solid fa-building"></i> About Us</div>
-      <h1 class="text-4xl sm:text-5xl font-outfit font-semibold text-white mb-4 fade-in">Our <span class="text-accent">Story</span></h1>
+      <h1 class="text-4xl sm:text-5xl font-outfit font-bold text-white mb-4 fade-in">Our <span class="text-accent">Story</span></h1>
       <nav class="breadcrumb flex items-center gap-2 text-sm fade-in delay-1"><a href="index.html" class="hover:text-accent">Home</a><span class="text-white/40">/</span><span class="text-accent">About</span></nav>
     </div>
   </section>
@@ -81,10 +106,10 @@
           </div>
         </div>
         <div class="relative fade-in delay-1">
-          <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=600&h=450&fit=crop" alt="Restoration workshop" class="rounded-2xl shadow-glass-lg w-full object-cover h-[420px]">
-          <div class="absolute -bottom-6 -left-6 glass-card p-5 animate-float">
-            <div class="text-accent font-outfit font-semibold text-3xl">37+</div>
-            <div class="text-white text-sm font-medium">Years Experience</div>
+          <img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=1000&q=80&auto=format&fit=crop" alt="Restoration workshop" class="rounded-2xl shadow-glass-lg w-full object-cover h-[450px]">
+          <div class="absolute -bottom-10 -left-10 bg-primary/95 backdrop-blur-md border border-accent/30 p-8 rounded-2xl shadow-2xl animate-float z-20">
+            <div class="text-accent font-outfit font-bold text-5xl mb-1 tracking-tight">37+</div>
+            <div class="text-white/90 text-sm font-bold uppercase tracking-widest">Years Experience</div>
           </div>
         </div>
       </div>
@@ -93,17 +118,17 @@
       <div class="grid sm:grid-cols-3 gap-8">
         <div class="service-card hover-float hover-glow text-center fade-in">
           <div class="icon-box mx-auto"><i class="fa-solid fa-heart"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Our Mission</h3>
+          <h3 class="font-outfit font-bold text-xl mb-2">Our Mission</h3>
           <p class="text-txtlight text-sm">To preserve automotive history by restoring vintage cars to their original splendor with uncompromising quality.</p>
         </div>
         <div class="service-card hover-float hover-glow text-center fade-in delay-1">
           <div class="icon-box mx-auto"><i class="fa-solid fa-eye"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Our Vision</h3>
+          <h3 class="font-outfit font-bold text-xl mb-2">Our Vision</h3>
           <p class="text-txtlight text-sm">To be the world's most trusted name in classic car restoration, setting the standard for excellence and authenticity.</p>
         </div>
         <div class="service-card hover-float hover-glow text-center fade-in delay-2">
           <div class="icon-box mx-auto"><i class="fa-solid fa-handshake"></i></div>
-          <h3 class="font-outfit font-semibold text-xl mb-2">Our Values</h3>
+          <h3 class="font-outfit font-bold text-xl mb-2">Our Values</h3>
           <p class="text-txtlight text-sm">Integrity, craftsmanship, passion, and an unwavering commitment to preserving every car's unique character.</p>
         </div>
       </div>
@@ -111,7 +136,7 @@
   </section>
 
   <!-- HISTORY TIMELINE -->
-  <section class="py-20 bg-secondary">
+  <section class="py-20 bg-section-alt">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14">
         <div class="section-badge fade-in"><i class="fa-solid fa-clock-rotate-left"></i> Our History</div>
@@ -120,27 +145,27 @@
       <div class="timeline">
         <div class="timeline-item fade-in">
           <div class="text-accent font-outfit font-semibold text-sm mb-1">1987</div>
-          <h3 class="font-outfit font-semibold text-lg mb-1">The Beginning</h3>
+          <h3 class="font-outfit font-bold text-lg mb-1">The Beginning</h3>
           <p class="text-txtlight text-sm">Richard Hayes opens a single-bay garage specializing in British sports car restoration.</p>
         </div>
         <div class="timeline-item fade-in delay-1">
           <div class="text-accent font-outfit font-semibold text-sm mb-1">1995</div>
-          <h3 class="font-outfit font-semibold text-lg mb-1">First Award</h3>
+          <h3 class="font-outfit font-bold text-lg mb-1">First Award</h3>
           <p class="text-txtlight text-sm">Won "Best in Class" at Pebble Beach for a fully restored 1961 Jaguar E-Type.</p>
         </div>
         <div class="timeline-item fade-in delay-2">
           <div class="text-accent font-outfit font-semibold text-sm mb-1">2005</div>
-          <h3 class="font-outfit font-semibold text-lg mb-1">Facility Expansion</h3>
+          <h3 class="font-outfit font-bold text-lg mb-1">Facility Expansion</h3>
           <p class="text-txtlight text-sm">Moved to our current 20,000 sq ft facility with dedicated paint booth and engine shop.</p>
         </div>
         <div class="timeline-item fade-in delay-3">
           <div class="text-accent font-outfit font-semibold text-sm mb-1">2015</div>
-          <h3 class="font-outfit font-semibold text-lg mb-1">International Recognition</h3>
+          <h3 class="font-outfit font-bold text-lg mb-1">International Recognition</h3>
           <p class="text-txtlight text-sm">Featured in Classic Car Magazine's "Top 10 Restoration Shops in the World."</p>
         </div>
         <div class="timeline-item fade-in delay-4">
           <div class="text-accent font-outfit font-semibold text-sm mb-1">2026</div>
-          <h3 class="font-outfit font-semibold text-lg mb-1">1,500th Restoration</h3>
+          <h3 class="font-outfit font-bold text-lg mb-1">1,500th Restoration</h3>
           <p class="text-txtlight text-sm">Celebrating our 1,500th completed restoration and nearly four decades of excellence.</p>
         </div>
       </div>
@@ -153,43 +178,32 @@
       <div class="text-center mb-14">
         <div class="section-badge fade-in"><i class="fa-solid fa-users"></i> Our Team</div>
         <h2 class="section-title fade-in">Meet Our <span class="text-accent">Experts</span></h2>
-        <p class="section-subtitle fade-in delay-1 font-medium">A dedicated team of artisans who live and breathe classic cars.</p>
+        <p class="section-subtitle fade-in delay-1">A dedicated team of artisans who live and breathe classic cars.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="text-center fade-in hover-float">
-          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=350&fit=crop&crop=face" alt="Richard Hayes" class="w-full h-72 object-cover"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-twitter"></i></a></div></div>
-          <h3 class="font-outfit font-semibold">Richard Hayes</h3><p class="text-accent text-sm">Founder & Lead Restorer</p>
+          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop" alt="Richard Hayes" class="w-full h-80 object-cover object-top"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
+          <h3 class="font-outfit font-bold">Richard Hayes</h3><p class="text-accent text-sm">Founder & Lead Restorer</p>
         </div>
         <div class="text-center fade-in delay-1 hover-float">
-          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=350&fit=crop&crop=face" alt="Maria Santos" class="w-full h-72 object-cover"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
-          <h3 class="font-outfit font-semibold">Maria Santos</h3><p class="text-accent text-sm">Paint Specialist</p>
+          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=800&fit=crop" alt="Maria Santos" class="w-full h-80 object-cover object-top"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
+          <h3 class="font-outfit font-bold">Maria Santos</h3><p class="text-accent text-sm">Paint Specialist</p>
         </div>
         <div class="text-center fade-in delay-2 hover-float">
-          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=350&fit=crop&crop=face" alt="Thomas Wright" class="w-full h-72 object-cover"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
-          <h3 class="font-outfit font-semibold">Thomas Wright</h3><p class="text-accent text-sm">Engine Specialist</p>
+          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=800&fit=crop" alt="Thomas Wright" class="w-full h-80 object-cover object-top"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
+          <h3 class="font-outfit font-bold">Thomas Wright</h3><p class="text-accent text-sm">Engine Specialist</p>
         </div>
         <div class="text-center fade-in delay-3 hover-float">
-          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=350&fit=crop&crop=face" alt="Elena Ross" class="w-full h-72 object-cover"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
-          <h3 class="font-outfit font-semibold">Elena Ross</h3><p class="text-accent text-sm">Interior Designer</p>
+          <div class="relative rounded-2xl overflow-hidden mb-4 group"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=800&fit=crop" alt="Elena Ross" class="w-full h-80 object-cover object-top"><div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-accent flex items-center justify-center text-primary"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
+          <h3 class="font-outfit font-bold">Elena Ross</h3><p class="text-accent text-sm">Interior Designer</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="py-16 relative overflow-hidden" style="background: linear-gradient(135deg, #1a1a2e 0%, #c8a951 100%);">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div class="fade-in"><div class="counter-value !text-white" data-counter="1500" data-suffix="+">0</div><p class="text-white/60 mt-1 font-medium">Cars Restored</p></div>
-        <div class="fade-in delay-1"><div class="counter-value !text-white" data-counter="37" data-suffix=" Yrs">0</div><p class="text-white/60 mt-1 font-medium">Experience</p></div>
-        <div class="fade-in delay-2"><div class="counter-value !text-white" data-counter="98" data-suffix="%">0</div><p class="text-white/60 mt-1 font-medium">Client Satisfaction</p></div>
-        <div class="fade-in delay-3"><div class="counter-value !text-white" data-counter="45" data-suffix="+">0</div><p class="text-white/60 mt-1 font-medium">Awards Won</p></div>
-      </div>
-    </div>
-  </section>
 
   <!-- TESTIMONIALS -->
-  <section class="py-20 bg-secondary">
+  <section class="py-20 bg-section-alt">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14">
         <div class="section-badge fade-in"><i class="fa-solid fa-quote-left"></i> Testimonials</div>
@@ -236,7 +250,7 @@
         </div>
         <!-- Quick Links -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Quick Links</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li><a href="about.html" class="text-white/50 hover:text-accent transition text-sm">About Us</a></li>
             <li><a href="services.html" class="text-white/50 hover:text-accent transition text-sm">Services</a></li>
@@ -247,7 +261,7 @@
         </div>
         <!-- Services -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Services</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Services</h4>
           <ul class="space-y-2">
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full Restoration</a></li>
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom Paint</a></li>
@@ -258,7 +272,7 @@
         </div>
         <!-- Newsletter -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Newsletter</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Newsletter</h4>
           <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.</p>
           <form class="newsletter-form flex w-full max-w-full">
             <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">

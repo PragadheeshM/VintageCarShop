@@ -16,25 +16,43 @@
 <body class="font-inter">
 
   <!-- NAVBAR -->
-  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 py-4">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+  <nav id="main-nav" class="glass-nav fixed top-0 left-0 w-full z-50 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full">
       <a href="index.html" class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center"><i class="fa-solid fa-car text-primary text-lg"></i></div><span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span></a>
-      <div class="hidden xl:flex items-center gap-8 desktop-nav">
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div></div>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="pricing.html" class="nav-link">Pricing</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        
-        <a href="contact.html" class="nav-link">Contact</a>
-        <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i class="fa-solid fa-chevron-down text-xs"></i></a><div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a href="admin-dashboard.html">Admin Dashboard</a></div></div>
-      </div>
-      <div class="flex items-center gap-3">
-        <button id="dark-mode-toggle" class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i class="fa-solid fa-moon"></i></button>
-        <button id="rtl-toggle" class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
-        <a href="login.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
-        <a href="register.html" class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
-        <div id="hamburger" class="hamburger xl:hidden"><span></span><span></span><span></span></div>
+      <!-- Right Side Content -->
+      <div class="flex items-center gap-10">
+        <!-- Desktop Nav -->
+        <div class="hidden xl:flex items-center gap-10 desktop-nav">
+          <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Home <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="index.html">Homepage 1</a><a href="index2.html">Homepage 2</a></div>
+          </div>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="blog.html" class="nav-link active">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <div class="nav-dropdown"><a href="#" class="nav-link flex items-center gap-1">Dashboard <i
+                class="fa-solid fa-chevron-down text-xs"></i></a>
+            <div class="nav-dropdown-menu"><a href="user-dashboard.html">User Dashboard</a><a
+                href="admin-dashboard.html">Admin Dashboard</a></div>
+          </div>
+        </div>
+        <!-- Right actions -->
+        <div class="flex items-center gap-3">
+          <button id="dark-mode-toggle"
+            class="w-10 h-10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-accent transition"><i
+              class="fa-solid fa-moon"></i></button>
+          <button id="rtl-toggle"
+            class="px-2 min-w-[40px] h-10 rounded-lg flex items-center justify-center text-[10px] font-semibold tracking-tighter text-gray-600 dark:text-white/70 hover:text-accent border border-gray-300 dark:border-white/10 hover:border-accent transition">RTL</button>
+          <a href="login.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-outline text-sm !py-0 !px-5">Login</a>
+          <a href="register.html"
+            class="hidden sm:inline-flex items-center justify-center h-10 btn-primary text-sm !py-0 !px-5">Register</a>
+          <div id="hamburger" class="hamburger xl:hidden">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
       </div>
     </div>
     <div id="mobile-menu" class="mobile-menu xl:hidden">
@@ -59,7 +77,7 @@
   <section class="page-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="section-badge fade-in"><i class="fa-solid fa-file-lines"></i> Blog Post</div>
-      <h1 class="text-3xl sm:text-4xl font-outfit font-semibold text-white mb-4 fade-in max-w-3xl">5 Signs Your Classic Car Needs <span class="text-accent">Professional Restoration</span></h1>
+      <h1 class="text-3xl sm:text-4xl font-outfit font-bold text-white mb-4 fade-in max-w-3xl">5 Signs Your Classic Car Needs <span class="text-accent">Professional Restoration</span></h1>
       <nav class="breadcrumb flex items-center gap-2 text-sm fade-in delay-1"><a href="index.html">Home</a><span class="text-white/40">/</span><a href="blog.html">Blog</a><span class="text-white/40">/</span><span class="text-accent">Blog Details</span></nav>
     </div>
   </section>
@@ -87,10 +105,10 @@
           <article class="prose max-w-none fade-in">
             <p class="text-txtlight leading-relaxed mb-6">Classic cars are more than just vehicles — they're pieces of automotive history. Whether you've inherited a family heirloom or found a barn treasure, knowing when your classic car needs professional restoration can save you time, money, and heartache. Here are the five key signs to watch for.</p>
 
-            <h2 class="font-outfit font-semibold text-2xl mt-8 mb-4">1. Visible Rust and Corrosion</h2>
+            <h2 class="font-outfit font-bold text-2xl mt-8 mb-4">1. Visible Rust and Corrosion</h2>
             <p class="text-txtlight leading-relaxed mb-4">Surface rust is one thing, but when you start noticing bubbling paint, flaking metal, or holes in the body panels, it's time to act. Rust is often called "cancer" in the classic car world because once it starts, it spreads relentlessly. A professional shop can assess the extent of the damage and perform proper rust repair, including media blasting, patch panel fabrication, and protective coating application.</p>
 
-            <h2 class="font-outfit font-semibold text-2xl mt-8 mb-4">2. Mechanical Issues Beyond DIY</h2>
+            <h2 class="font-outfit font-bold text-2xl mt-8 mb-4">2. Mechanical Issues Beyond DIY</h2>
             <p class="text-txtlight leading-relaxed mb-4">While many classic car enthusiasts enjoy working on their own vehicles, some mechanical issues require specialized knowledge and equipment. If your engine is burning oil excessively, the transmission is slipping, or the brakes feel dangerously spongy, it's time to consult the professionals. Period-correct rebuilds require specific tolerances and parts that most home garages can't accommodate.</p>
 
             <div class="my-8 rounded-2xl overflow-hidden">
@@ -98,21 +116,21 @@
               <p class="text-center text-xs text-txtlight mt-2 italic">Our state-of-the-art workshop equipped for any restoration challenge</p>
             </div>
 
-            <h2 class="font-outfit font-semibold text-2xl mt-8 mb-4">3. Deteriorated Interior</h2>
+            <h2 class="font-outfit font-bold text-2xl mt-8 mb-4">3. Deteriorated Interior</h2>
             <p class="text-txtlight leading-relaxed mb-4">Cracked dashboards, torn upholstery, faded carpets, and brittle door panels all indicate that your classic's interior needs professional attention. Restoration-quality interior work requires access to period-correct materials and patterns — something that professional upholstery shops specialize in.</p>
 
-            <h2 class="font-outfit font-semibold text-2xl mt-8 mb-4">4. Electrical Problems</h2>
+            <h2 class="font-outfit font-bold text-2xl mt-8 mb-4">4. Electrical Problems</h2>
             <p class="text-txtlight leading-relaxed mb-4">Vintage car electrical systems are notoriously finicky. If you're experiencing flickering lights, dead gauges, intermittent starting issues, or — worst case — mysterious burning smells, it's time for a professional rewire. Modern wiring harnesses designed and disguised for vintage cars provide much greater reliability and safety.</p>
 
-            <h2 class="font-outfit font-semibold text-2xl mt-8 mb-4">5. Declining Value</h2>
+            <h2 class="font-outfit font-bold text-2xl mt-8 mb-4">5. Declining Value</h2>
             <p class="text-txtlight leading-relaxed mb-6">If your classic car's value is declining due to its condition, a professional restoration can be a smart investment. According to Hagerty, well-restored examples of popular classics can appreciate 10-20% annually. A professional restoration with proper documentation can significantly increase (or preserve) your classic's market value.</p>
 
-            <div class="bg-secondary rounded-xl p-6 border-l-4 border-accent my-8">
+            <div class="bg-white rounded-xl p-6 border-l-4 border-accent my-8 shadow-card">
               <p class="text-sm font-medium italic">"A good restoration doesn't cost money — it preserves and creates value. Think of it as an investment in automotive history."</p>
               <p class="text-accent text-sm font-semibold mt-2">— Richard Hayes, Founder</p>
             </div>
 
-            <h2 class="font-outfit font-semibold text-2xl mt-8 mb-4">Conclusion</h2>
+            <h2 class="font-outfit font-bold text-2xl mt-8 mb-4">Conclusion</h2>
             <p class="text-txtlight leading-relaxed mb-6">If your classic car is showing any of these signs, don't wait. The longer these issues go unaddressed, the more expensive they become to fix. Contact our team for a free evaluation — we'll give you an honest assessment and help you choose the right restoration path for your goals and budget.</p>
           </article>
 
@@ -133,10 +151,10 @@
           </div>
 
           <!-- Author Card -->
-          <div class="mt-8 p-6 rounded-2xl bg-secondary flex flex-col sm:flex-row items-center gap-5 fade-in">
+          <div class="mt-8 p-6 rounded-2xl bg-white shadow-card flex flex-col sm:flex-row items-center gap-5 fade-in">
             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face" class="w-20 h-20 rounded-full object-cover" alt="Richard Hayes">
             <div>
-              <h4 class="font-outfit font-semibold text-lg">Richard Hayes</h4>
+              <h4 class="font-outfit font-bold text-lg">Richard Hayes</h4>
               <p class="text-accent text-sm mb-2">Founder & Lead Restorer</p>
               <p class="text-txtlight text-sm">With 37+ years of experience, Richard has restored over 1,500 classic cars. He shares his expertise through regular blog posts and workshops.</p>
             </div>
@@ -144,23 +162,23 @@
 
           <!-- Comments Section (Mock) -->
           <div class="mt-12 fade-in">
-            <h3 class="font-outfit font-semibold text-xl mb-6">Comments (3)</h3>
+            <h3 class="font-outfit font-bold text-xl mb-6">Comments (3)</h3>
             <div class="space-y-6">
-              <div class="flex gap-4 p-4 rounded-xl bg-secondary">
+              <div class="flex gap-4 p-4 rounded-xl bg-white shadow-card">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" class="w-10 h-10 rounded-full object-cover flex-shrink-0" alt="">
                 <div>
                   <div class="flex items-center gap-2 mb-1"><span class="font-semibold text-sm">Robert Mitchell</span><span class="text-txtlight text-xs">2 days ago</span></div>
                   <p class="text-txtlight text-sm">Great article! I noticed sign #1 on my '67 Corvette and brought it right in. So glad I didn't wait — the rust was worse underneath than it looked.</p>
                 </div>
               </div>
-              <div class="flex gap-4 p-4 rounded-xl bg-secondary">
+              <div class="flex gap-4 p-4 rounded-xl bg-white shadow-card">
                 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&crop=face" class="w-10 h-10 rounded-full object-cover flex-shrink-0" alt="">
                 <div>
                   <div class="flex items-center gap-2 mb-1"><span class="font-semibold text-sm">Sarah Williams</span><span class="text-txtlight text-xs">3 days ago</span></div>
                   <p class="text-txtlight text-sm">The tip about electrical systems is spot-on. My Porsche 356 had phantom electrical gremlins for years before I finally got it rewired professionally.</p>
                 </div>
               </div>
-              <div class="flex gap-4 p-4 rounded-xl bg-secondary">
+              <div class="flex gap-4 p-4 rounded-xl bg-white shadow-card">
                 <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" class="w-10 h-10 rounded-full object-cover flex-shrink-0" alt="">
                 <div>
                   <div class="flex items-center gap-2 mb-1"><span class="font-semibold text-sm">James Chen</span><span class="text-txtlight text-xs">1 week ago</span></div>
@@ -175,11 +193,11 @@
         <div class="lg:col-span-1">
           <div class="sticky top-24 space-y-6">
             <div class="service-card fade-in">
-              <h3 class="font-outfit font-semibold text-lg mb-3">Search</h3>
+              <h3 class="font-outfit font-bold text-lg mb-3">Search</h3>
               <div class="flex"><input type="text" placeholder="Search..." class="flex-1 px-4 py-2.5 rounded-l-lg border border-gray-200 text-sm focus:outline-none focus:border-accent"><button class="px-4 py-2.5 bg-accent text-primary rounded-r-lg"><i class="fa-solid fa-search"></i></button></div>
             </div>
             <div class="service-card fade-in delay-1">
-              <h3 class="font-outfit font-semibold text-lg mb-3">Related Posts</h3>
+              <h3 class="font-outfit font-bold text-lg mb-3">Related Posts</h3>
               <div class="space-y-4">
                 <a href="blog-details.html" class="flex gap-3 group"><img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=80&h=60&fit=crop" class="w-16 h-12 rounded-lg object-cover flex-shrink-0" alt=""><div><h4 class="text-sm font-medium group-hover:text-accent transition line-clamp-2">Frame-Off vs. Frame-On Restoration</h4><span class="text-xs text-txtlight">Feb 15</span></div></a>
                 <a href="blog-details.html" class="flex gap-3 group"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=80&h=60&fit=crop" class="w-16 h-12 rounded-lg object-cover flex-shrink-0" alt=""><div><h4 class="text-sm font-medium group-hover:text-accent transition line-clamp-2">How to Maintain Your Restored Classic</h4><span class="text-xs text-txtlight">Mar 8</span></div></a>
@@ -187,7 +205,7 @@
               </div>
             </div>
             <div class="service-card fade-in delay-2">
-              <h3 class="font-outfit font-semibold text-lg mb-3">Categories</h3>
+              <h3 class="font-outfit font-bold text-lg mb-3">Categories</h3>
               <ul class="space-y-2"><li><a href="#" class="flex justify-between text-sm hover:text-accent transition"><span>Restoration</span><span class="text-accent">12</span></a></li><li><a href="#" class="flex justify-between text-sm hover:text-accent transition"><span>Tips & Tricks</span><span class="text-accent">8</span></a></li><li><a href="#" class="flex justify-between text-sm hover:text-accent transition"><span>Buying Guides</span><span class="text-accent">5</span></a></li><li><a href="#" class="flex justify-between text-sm hover:text-accent transition"><span>News</span><span class="text-accent">10</span></a></li></ul>
             </div>
           </div>
@@ -196,7 +214,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <!-- ===== FOOTER ===== -->
   <footer class="bg-primary pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -217,7 +234,7 @@
         </div>
         <!-- Quick Links -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Quick Links</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li><a href="about.html" class="text-white/50 hover:text-accent transition text-sm">About Us</a></li>
             <li><a href="services.html" class="text-white/50 hover:text-accent transition text-sm">Services</a></li>
@@ -228,7 +245,7 @@
         </div>
         <!-- Services -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Services</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Services</h4>
           <ul class="space-y-2">
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Full Restoration</a></li>
             <li><a href="service-details.html" class="text-white/50 hover:text-accent transition text-sm">Custom Paint</a></li>
@@ -239,7 +256,7 @@
         </div>
         <!-- Newsletter -->
         <div>
-          <h4 class="text-white font-outfit font-semibold text-lg mb-4">Newsletter</h4>
+          <h4 class="text-white font-outfit font-bold text-lg mb-4">Newsletter</h4>
           <p class="text-white/50 text-sm mb-4">Subscribe for restoration tips, project updates, and classic car news.</p>
           <form class="newsletter-form flex w-full max-w-full">
             <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2.5 rounded-l-lg bg-white/10 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-accent">

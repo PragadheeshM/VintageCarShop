@@ -16,7 +16,7 @@
 <body class="font-inter">
 
   <!-- Full-Screen Auth Background -->
-  <div class="auth-bg" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&h=1000&fit=crop');">
+  <div class="auth-bg" style="background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1920&q=80&auto=format&fit=crop');">
     <!-- Toggles Outside Container -->
     <div class="fixed top-4 right-4 sm:top-8 sm:right-8 z-50 flex items-center gap-2 sm:gap-3">
       <button id="dark-mode-toggle" class="w-9 h-9 sm:w-11 sm:h-11 rounded-full flex items-center justify-center bg-black/40 dark:bg-white/10 text-white hover:text-accent backdrop-blur-lg border border-white/10 transition"><i class="fa-solid fa-moon text-sm sm:text-base"></i></button>
@@ -28,15 +28,16 @@
       <!-- Logo -->
       <div class="flex items-center justify-center mb-8 pb-6 border-b auth-divider">
         <a href="index.html" class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center shadow-lg">
+          <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
             <i class="fa-solid fa-car text-primary text-lg"></i>
           </div>
-          <span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span class="text-accent">Cars</span></span>
+          <span class="font-outfit font-semibold text-xl text-gray-800 dark:text-white">Vintage<span
+              class="text-accent">Cars</span></span>
         </a>
       </div>
 
       <div class="text-center mb-8">
-        <h1 class="text-2xl font-outfit font-semibold mb-2">Welcome Back</h1>
+        <h1 class="text-2xl font-outfit font-bold mb-2">Welcome Back</h1>
         <p class="text-sm">Sign in to track your restoration progress</p>
       </div>
 
@@ -45,22 +46,16 @@
           <label for="login-email">Email Address</label>
           <input type="email" id="login-email" required placeholder="Enter your email address">
         </div>
-        <div class="relative">
+        <div>
           <label for="login-password">Password</label>
           <input type="password" id="login-password" required placeholder="Enter your password">
-          <div class="mt-2 text-right">
-            <a href="#" class="text-accent text-xs hover:underline font-medium">Forgot password?</a>
-          </div>
         </div>
-        <div class="flex items-center mt-3 mb-1">
-          <label class="flex items-start gap-2.5 cursor-pointer m-0" style="display: flex !important;">
-            <div class="flex items-center h-[20px] pt-1 mt-0.5">
-              <input type="checkbox" class="w-[18px] h-[18px] rounded border-gray-300 bg-white/50 text-accent focus:ring-accent cursor-pointer m-0 flex-shrink-0">
-            </div>
-            <div class="text-[14px] leading-snug">
-              Remember me
-            </div>
+        <div class="flex items-center justify-between mt-4 mb-2">
+          <label class="flex flex-row items-center gap-2 cursor-pointer m-0">
+            <input type="checkbox" class="flex-shrink-0">
+            <span class="text-[13px] font-medium">Remember me</span>
           </label>
+          <a href="#" class="text-accent text-[13px] hover:underline font-medium">Forgot password?</a>
         </div>
         <button type="submit" class="btn-primary w-full justify-center !py-3 text-base"><i class="fa-solid fa-right-to-bracket"></i> Sign In</button>
       </form>
@@ -73,15 +68,15 @@
       </div>
 
       <!-- Social Login -->
-      <div class="grid grid-cols-3 gap-3">
-        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border social-btn hover:border-accent hover:text-accent transition text-xs">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border social-btn social-btn-google transition text-xs font-semibold">
           <i class="fa-brands fa-google"></i> Google
         </button>
-        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border social-btn hover:border-accent hover:text-accent transition text-xs">
+        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border social-btn social-btn-apple transition text-xs font-semibold">
           <i class="fa-brands fa-apple"></i> Apple
         </button>
-        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border social-btn hover:border-accent hover:text-accent transition text-xs">
-          <i class="fa-brands fa-facebook-f"></i> FB
+        <button class="flex items-center justify-center gap-2 py-2.5 rounded-lg border social-btn social-btn-facebook transition text-xs font-semibold">
+          <i class="fa-brands fa-facebook-f"></i> Facebook
         </button>
       </div>
 

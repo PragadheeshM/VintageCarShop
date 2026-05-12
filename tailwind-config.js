@@ -31,9 +31,9 @@ tailwind.config = {
         inter: ['Inter', 'sans-serif'],
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%)',
+        'gradient-primary': 'linear-gradient(135deg, #000000 0%, #1a1a1a 100%)',
         'gradient-accent': 'linear-gradient(135deg, #c8a951 0%, #e8d48b 100%)',
-        'gradient-hero': 'linear-gradient(135deg, #1a1a2e 0%, #c8a951 100%)',
+        'gradient-hero': 'linear-gradient(135deg, #000000 0%, #c8a951 100%)',
         'gradient-gold': 'linear-gradient(135deg, #c8a951 0%, #b89a3d 50%, #d4bc6e 100%)',
       },
       boxShadow: {
